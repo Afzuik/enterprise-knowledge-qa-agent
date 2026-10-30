@@ -1,0 +1,175 @@
+{
+  "synthetic": true,
+  "description": "本目录资料仅用于考核演示，不对应真实企业制度。",
+  "documents": [
+    {
+      "doc_id": "D01",
+      "title": "费用报销制度",
+      "version_date": "2026-01-01",
+      "scope": null,
+      "priority": null,
+      "keywords": [
+        "报销",
+        "费用",
+        "期限"
+      ],
+      "chunks": [
+        {
+          "chunk_id": "D01-C01",
+          "text": "报销期限为 30 天。"
+        }
+      ]
+    },
+    {
+      "doc_id": "D03",
+      "title": "办公设备申领 FAQ",
+      "version_date": "2026-01-01",
+      "scope": "全体员工",
+      "priority": null,
+      "keywords": [
+        "设备",
+        "电脑",
+        "申领",
+        "工单"
+      ],
+      "chunks": [
+        {
+          "chunk_id": "D03-C01",
+          "text": "员工申领办公设备时，应在内部工单系统选择“设备申领”，填写设备类型与用途，由直属主管审批。"
+        }
+      ]
+    },
+    {
+      "doc_id": "D04",
+      "title": "账户密码重置 FAQ",
+      "version_date": "2026-01-01",
+      "scope": "内部办公账户",
+      "priority": null,
+      "keywords": [
+        "账户",
+        "密码",
+        "重置",
+        "邮箱"
+      ],
+      "chunks": [
+        {
+          "chunk_id": "D04-C01",
+          "text": "账户密码遗失后，可在内部登录页选择“重置密码”，通过公司邮箱验证后设置新密码。"
+        }
+      ]
+    },
+    {
+      "doc_id": "D05",
+      "title": "产品文件导出 FAQ",
+      "version_date": "2026-01-01",
+      "scope": "影云标准版",
+      "priority": null,
+      "keywords": [
+        "影云",
+        "产品",
+        "导出",
+        "格式",
+        "mp4"
+      ],
+      "chunks": [
+        {
+          "chunk_id": "D05-C01",
+          "text": "合成产品“影云”的标准版支持导出 MP4 文件；本资料未说明其他导出格式。"
+        }
+      ]
+    },
+    {
+      "doc_id": "D06",
+      "title": "会议室预约规则",
+      "version_date": "2026-01-01",
+      "scope": "总部办公区",
+      "priority": null,
+      "keywords": [
+        "会议室",
+        "预约",
+        "取消"
+      ],
+      "chunks": [
+        {
+          "chunk_id": "D06-C01",
+          "text": "预约会议室须填写会议主题、开始时间和结束时间；会议取消后应释放预约。"
+        }
+      ]
+    },
+    {
+      "doc_id": "D07",
+      "title": "请假申请流程",
+      "version_date": "2026-01-01",
+      "scope": "全体员工",
+      "priority": null,
+      "keywords": [
+        "请假",
+        "人事",
+        "申请",
+        "审批"
+      ],
+      "chunks": [
+        {
+          "chunk_id": "D07-C01",
+          "text": "员工请假须在内部人事系统提交申请，注明请假日期和类型，由直属主管审批。"
+        }
+      ]
+    },
+    {
+      "doc_id": "D08",
+      "title": "信息安全资料规则",
+      "version_date": "2026-01-01",
+      "scope": "全体员工",
+      "priority": null,
+      "keywords": [
+        "信息安全",
+        "密钥",
+        "隐私",
+        "仓库"
+      ],
+      "chunks": [
+        {
+          "chunk_id": "D08-C01",
+          "text": "不得在公开仓库中上传真实访问密钥、客户隐私数据或内部访问令牌。"
+        }
+      ]
+    },
+    {
+      "doc_id": "D09",
+      "title": "产品工单支持 FAQ",
+      "version_date": "2026-01-01",
+      "scope": "影云产品",
+      "priority": null,
+      "keywords": [
+        "影云",
+        "故障",
+        "工单",
+        "支持"
+      ],
+      "chunks": [
+        {
+          "chunk_id": "D09-C01",
+          "text": "影云产品故障反馈应包含复现步骤、发生时间与脱敏后的错误截图，通过产品支持工单提交。"
+        }
+      ]
+    },
+    {
+      "doc_id": "D10",
+      "title": "办公访客登记规则",
+      "version_date": "2026-01-01",
+      "scope": "总部办公区",
+      "priority": null,
+      "keywords": [
+        "访客",
+        "登记",
+        "接待"
+      ],
+      "chunks": [
+        {
+          "chunk_id": "D10-C01",
+          "text": "外部访客到访前，应由接待员工提交访客姓名、到访日期和接待人信息。"
+        }
+      ]
+    }
+  ]
+}

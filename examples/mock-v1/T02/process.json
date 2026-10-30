@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/run.py",
+    "ask",
+    "--mode",
+    "mock",
+    "--question",
+    "报销期限多久？",
+    "--corpus",
+    "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/data/corpus_conflict.json",
+    "--fault",
+    "none",
+    "--max-steps",
+    "10",
+    "--timeout",
+    "30",
+    "--output",
+    "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/examples/mock-v1/T02"
+  ],
+  "cwd": "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent",
+  "exit_code": 0
+}

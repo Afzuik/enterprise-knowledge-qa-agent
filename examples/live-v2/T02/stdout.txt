@@ -1,0 +1,38 @@
+{
+  "answer": "现有资料存在冲突，无法确定唯一报销期限：《费用报销制度》（版本日期 2026-01-01）规定“报销期限为 30 天”，而《费用报销制度补充材料》（版本日期 2026-02-01）规定“报销期限为 15 天”。两份片段均未注明适用范围或优先级，补充检索也未找到替代、优先级等消歧依据，因此不能擅自按较新日期或较短期限作答。请确认应以哪份制度为准，或补充说明适用部门/费用类型。",
+  "citations": [
+    {
+      "doc_id": "D01",
+      "chunk_id": "D01-C01",
+      "version_date": "2026-01-01",
+      "quote": "报销期限为 30 天。"
+    },
+    {
+      "doc_id": "D02",
+      "chunk_id": "D02-C01",
+      "version_date": "2026-02-01",
+      "quote": "报销期限为 15 天。"
+    }
+  ],
+  "gaps": [
+    "两份制度对报销期限规定不一致（30 天与 15 天）",
+    "片段未提供适用范围",
+    "片段未提供优先级或替代关系说明"
+  ],
+  "status": "needs_clarification",
+  "clarification_question": "请确认报销期限应适用《费用报销制度》的 30 天，还是《费用报销制度补充材料》的 15 天；如适用范围不同，请说明所在部门或费用类型。",
+  "reason": "model_finished",
+  "metadata": {
+    "source_sha256": "1d3e43dd828fbc0b63c7c891058b4bedadcc9bf5a1b0c623dd8dcc5eacb5dbf0",
+    "run_id": "17f78406-b4f1-45dd-adc0-5f80ea843fea",
+    "started_at": "2026-10-30T06:54:59.005970+00:00",
+    "mode": "live",
+    "model": "deepseek-flash",
+    "corpus_sha256": "31fed8f2d10eedbc2c6bddf3eb098327df0c005c69d317c4b74678739dc2b9bd",
+    "max_steps": 10,
+    "evidence_scope": "本轮已读取的资料，不保证知识库完整召回",
+    "mock_disclaimer": "",
+    "steps": 5,
+    "duration_ms": 7338.27
+  }
+}

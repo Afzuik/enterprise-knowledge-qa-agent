@@ -1,0 +1,19 @@
+{
+  "id": "T09",
+  "title": "新增冲突后动作及状态变化",
+  "checks": {
+    "status": false,
+    "answer_contains": false,
+    "citation_ids": false,
+    "exit_code": false,
+    "trace_present": true,
+    "gaps_present": true,
+    "both_originals_read": true,
+    "conflict_followup_search": true,
+    "clarification_present": false
+  },
+  "passed": false,
+  "status": "incomplete",
+  "steps": 10,
+  "artifacts": "T09/"
+}

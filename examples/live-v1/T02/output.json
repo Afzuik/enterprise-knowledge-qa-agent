@@ -1,0 +1,37 @@
+{
+  "answer": "现有两份制度对报销期限规定不一致：D01《费用报销制度》（2026-01-01）写明“报销期限为 30 天”；D02《费用报销制度补充材料》（2026-02-01）写明“报销期限为 15 天”。两份材料的适用范围和优先级均未说明，也未检索到废止、替代或优先适用的依据，因此无法判断应以哪一份为准，不能擅自确定期限。",
+  "citations": [
+    {
+      "doc_id": "D01",
+      "chunk_id": "D01-C01",
+      "version_date": "2026-01-01",
+      "quote": "报销期限为 30 天。"
+    },
+    {
+      "doc_id": "D02",
+      "chunk_id": "D02-C01",
+      "version_date": "2026-02-01",
+      "quote": "报销期限为 15 天。"
+    }
+  ],
+  "gaps": [
+    "两份制度对报销期限规定冲突（30 天 vs 15 天）",
+    "缺少适用范围说明",
+    "缺少新旧制度优先适用、废止或替代关系说明"
+  ],
+  "status": "needs_clarification",
+  "clarification_question": "请确认本次适用哪份制度：D01《费用报销制度》（30 天）还是 D02《费用报销制度补充材料》（15 天）？或者请提供两者的适用部门/场景或优先适用规则。",
+  "reason": "model_finished",
+  "metadata": {
+    "run_id": "ce6cf6a9-8786-447f-9a59-6d19559b37ac",
+    "started_at": "2026-10-30T06:52:16.935317+00:00",
+    "mode": "live",
+    "model": "deepseek-flash",
+    "corpus_sha256": "31fed8f2d10eedbc2c6bddf3eb098327df0c005c69d317c4b74678739dc2b9bd",
+    "max_steps": 10,
+    "evidence_scope": "本轮已读取的资料，不保证知识库完整召回",
+    "mock_disclaimer": "",
+    "steps": 5,
+    "duration_ms": 6898.05
+  }
+}

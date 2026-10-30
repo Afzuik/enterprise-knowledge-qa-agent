@@ -1,0 +1,8 @@
+{
+  "question": "报销期限多久？",
+  "history": [],
+  "corpus": "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/data/corpus_normal.json",
+  "fault": "search_once",
+  "mode": "mock",
+  "max_steps": 10
+}

@@ -1,0 +1,16 @@
+{
+  "id": "T04",
+  "title": "改写后的相似问题",
+  "checks": {
+    "status": true,
+    "answer_contains": true,
+    "citation_ids": true,
+    "exit_code": true,
+    "trace_present": true,
+    "citations_grounded": true
+  },
+  "passed": true,
+  "status": "answered",
+  "steps": 3,
+  "artifacts": "T04/"
+}

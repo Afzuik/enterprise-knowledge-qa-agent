@@ -1,0 +1,20 @@
+{
+  "id": "T02",
+  "title": "文档冲突",
+  "checks": {
+    "status": true,
+    "answer_contains": true,
+    "citation_ids": true,
+    "exit_code": true,
+    "trace_present": true,
+    "citations_grounded": true,
+    "gaps_present": true,
+    "both_originals_read": true,
+    "conflict_followup_search": true,
+    "clarification_present": true
+  },
+  "passed": true,
+  "status": "needs_clarification",
+  "steps": 5,
+  "artifacts": "T02/"
+}

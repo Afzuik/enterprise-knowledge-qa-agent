@@ -1,0 +1,18 @@
+{
+  "id": "T10",
+  "title": "达到步数上限",
+  "checks": {
+    "status": true,
+    "answer_contains": true,
+    "citation_ids": true,
+    "exit_code": true,
+    "trace_present": true,
+    "citations_grounded": true,
+    "gaps_present": true,
+    "bounded": true
+  },
+  "passed": true,
+  "status": "incomplete",
+  "steps": 1,
+  "artifacts": "T10/"
+}

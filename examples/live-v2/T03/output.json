@@ -1,0 +1,24 @@
+{
+  "answer": "现有资料中未检索到公司停车位申请相关制度，无法确认申请入口、审批流程或车位分配规则。",
+  "citations": [],
+  "gaps": [
+    "缺少停车位/车辆管理相关制度文档",
+    "缺少车位申请流程、审批与分配规则的说明"
+  ],
+  "status": "insufficient_evidence",
+  "clarification_question": "您是否知道该制度可能所在的制度类别（如行政后勤、车辆管理）或文档名称？我可据此进一步检索。",
+  "reason": "model_finished",
+  "metadata": {
+    "source_sha256": "1d3e43dd828fbc0b63c7c891058b4bedadcc9bf5a1b0c623dd8dcc5eacb5dbf0",
+    "run_id": "dd29d2d0-90f6-469f-93cc-2074e146c944",
+    "started_at": "2026-10-30T06:55:06.414457+00:00",
+    "mode": "live",
+    "model": "deepseek-flash",
+    "corpus_sha256": "4b8955de837ee75f9836b777693b9c4226986fa36f59cb9deec08132c9520404",
+    "max_steps": 10,
+    "evidence_scope": "本轮已读取的资料，不保证知识库完整召回",
+    "mock_disclaimer": "",
+    "steps": 4,
+    "duration_ms": 5058.23
+  }
+}

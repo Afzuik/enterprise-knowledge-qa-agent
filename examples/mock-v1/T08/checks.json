@@ -1,0 +1,17 @@
+{
+  "id": "T08",
+  "title": "文档替换后答案变化",
+  "checks": {
+    "status": true,
+    "answer_contains": true,
+    "citation_ids": true,
+    "exit_code": true,
+    "trace_present": true,
+    "changed_quote": true,
+    "no_stale_answer": true
+  },
+  "passed": true,
+  "status": "answered",
+  "steps": 3,
+  "artifacts": "T08/"
+}

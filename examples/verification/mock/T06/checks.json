@@ -1,0 +1,17 @@
+{
+  "id": "T06",
+  "title": "工具短暂失败后恢复",
+  "checks": {
+    "status": true,
+    "answer_contains": true,
+    "citation_ids": true,
+    "exit_code": true,
+    "trace_present": true,
+    "citations_grounded": true,
+    "observed_failure_then_recovery": true
+  },
+  "passed": true,
+  "status": "answered",
+  "steps": 4,
+  "artifacts": "T06/"
+}

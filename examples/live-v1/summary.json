@@ -1,0 +1,179 @@
+{
+  "mode": "live",
+  "passed": 8,
+  "total": 10,
+  "cases": [
+    {
+      "id": "T01",
+      "title": "明确答案",
+      "checks": {
+        "status": true,
+        "answer_contains": true,
+        "citation_ids": true,
+        "exit_code": true,
+        "trace_present": true
+      },
+      "passed": true,
+      "status": "answered",
+      "steps": 4,
+      "artifacts": "T01/"
+    },
+    {
+      "id": "T02",
+      "title": "文档冲突",
+      "checks": {
+        "status": true,
+        "answer_contains": true,
+        "citation_ids": true,
+        "exit_code": true,
+        "trace_present": true,
+        "gaps_present": true,
+        "both_originals_read": true,
+        "conflict_followup_search": true,
+        "clarification_present": true
+      },
+      "passed": true,
+      "status": "needs_clarification",
+      "steps": 5,
+      "artifacts": "T02/"
+    },
+    {
+      "id": "T03",
+      "title": "资料外问题",
+      "checks": {
+        "status": false,
+        "answer_contains": true,
+        "citation_ids": true,
+        "exit_code": false,
+        "trace_present": true,
+        "gaps_present": true
+      },
+      "passed": false,
+      "status": "incomplete",
+      "steps": 10,
+      "artifacts": "T03/"
+    },
+    {
+      "id": "T04",
+      "title": "改写后的相似问题",
+      "checks": {
+        "status": true,
+        "answer_contains": true,
+        "citation_ids": true,
+        "exit_code": true,
+        "trace_present": true
+      },
+      "passed": true,
+      "status": "answered",
+      "steps": 10,
+      "artifacts": "T04/"
+    },
+    {
+      "id": "T05",
+      "title": "上下文追问",
+      "checks": {
+        "status": true,
+        "answer_contains": true,
+        "citation_ids": true,
+        "exit_code": true,
+        "trace_present": true
+      },
+      "passed": true,
+      "status": "answered",
+      "steps": 7,
+      "artifacts": "T05/"
+    },
+    {
+      "id": "T06",
+      "title": "工具短暂失败后恢复",
+      "checks": {
+        "status": true,
+        "answer_contains": true,
+        "citation_ids": true,
+        "exit_code": true,
+        "trace_present": true,
+        "observed_failure_then_recovery": true
+      },
+      "passed": true,
+      "status": "answered",
+      "steps": 9,
+      "artifacts": "T06/"
+    },
+    {
+      "id": "T07",
+      "title": "工具持续失败",
+      "checks": {
+        "status": true,
+        "answer_contains": true,
+        "citation_ids": true,
+        "exit_code": true,
+        "trace_present": true,
+        "gaps_present": true
+      },
+      "passed": true,
+      "status": "incomplete",
+      "steps": 6,
+      "artifacts": "T07/"
+    },
+    {
+      "id": "T08",
+      "title": "文档替换后答案变化",
+      "checks": {
+        "status": true,
+        "answer_contains": true,
+        "citation_ids": true,
+        "exit_code": true,
+        "trace_present": true,
+        "changed_quote": true,
+        "no_stale_answer": true
+      },
+      "passed": true,
+      "status": "answered",
+      "steps": 4,
+      "artifacts": "T08/"
+    },
+    {
+      "id": "T09",
+      "title": "新增冲突后动作及状态变化",
+      "checks": {
+        "status": false,
+        "answer_contains": false,
+        "citation_ids": false,
+        "exit_code": false,
+        "trace_present": true,
+        "gaps_present": true,
+        "both_originals_read": true,
+        "conflict_followup_search": true,
+        "clarification_present": false
+      },
+      "passed": false,
+      "status": "incomplete",
+      "steps": 10,
+      "artifacts": "T09/"
+    },
+    {
+      "id": "T10",
+      "title": "达到步数上限",
+      "checks": {
+        "status": true,
+        "answer_contains": true,
+        "citation_ids": true,
+        "exit_code": true,
+        "trace_present": true,
+        "gaps_present": true,
+        "bounded": true
+      },
+      "passed": true,
+      "status": "incomplete",
+      "steps": 1,
+      "artifacts": "T10/"
+    }
+  ],
+  "paired_checks": {
+    "content_change_changes_answer": true,
+    "conflict_changes_status": false,
+    "conflict_changes_actions": true
+  },
+  "scope": "固定合成样本的工程与行为检查；非统计泛化评测，语义引用支持需人工复核",
+  "mock_disclaimer": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "T03",
+  "title": "资料外问题",
+  "checks": {
+    "status": false,
+    "answer_contains": true,
+    "citation_ids": true,
+    "exit_code": false,
+    "trace_present": true,
+    "gaps_present": true
+  },
+  "passed": false,
+  "status": "incomplete",
+  "steps": 10,
+  "artifacts": "T03/"
+}

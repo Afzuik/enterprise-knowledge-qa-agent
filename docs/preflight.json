@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-30T07:02:54.976973+00:00",
+  "original_requirements_unchanged": true,
+  "documentation_links_valid": true,
+  "json_and_jsonl_valid": true,
+  "tracked_api_key_scan_passed": true,
+  "env_is_ignored_and_untracked": true,
+  "live_v2_source_matches_current": true,
+  "unit_tests": 73,
+  "unit_tests_passed": 73,
+  "live_v2_cases": 10,
+  "live_v2_passed": 10,
+  "mock_cases": 10,
+  "mock_passed": 10,
+  "remote_published": false,
+  "limits": "Only fixed synthetic samples; not production reliability."
+}

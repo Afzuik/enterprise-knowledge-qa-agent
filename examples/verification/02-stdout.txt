@@ -1,0 +1,22 @@
+T01 PASS answered steps=3
+T02 PASS needs_clarification steps=5
+T03 PASS insufficient_evidence steps=3
+T04 PASS answered steps=3
+T05 PASS answered steps=3
+T06 PASS answered steps=4
+T07 PASS incomplete steps=3
+T08 PASS answered steps=3
+T09 PASS needs_clarification steps=5
+T10 PASS incomplete steps=1
+{
+  "mode": "mock",
+  "passed": 10,
+  "total": 10,
+  "paired_checks": {
+    "content_change_changes_answer": true,
+    "conflict_changes_status": true,
+    "conflict_changes_actions": true
+  },
+  "scope": "固定合成样本的工程与行为检查；非统计泛化评测，语义引用支持需人工复核",
+  "mock_disclaimer": "仅验证流程，不证明真实模型决策效果"
+}

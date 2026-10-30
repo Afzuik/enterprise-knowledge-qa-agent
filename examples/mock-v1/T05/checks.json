@@ -1,0 +1,15 @@
+{
+  "id": "T05",
+  "title": "上下文追问",
+  "checks": {
+    "status": true,
+    "answer_contains": true,
+    "citation_ids": true,
+    "exit_code": true,
+    "trace_present": true
+  },
+  "passed": true,
+  "status": "answered",
+  "steps": 3,
+  "artifacts": "T05/"
+}

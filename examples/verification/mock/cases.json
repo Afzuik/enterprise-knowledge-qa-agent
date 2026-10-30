@@ -1,0 +1,174 @@
+[
+  {
+    "id": "T01",
+    "title": "明确答案",
+    "question": "报销期限多久？",
+    "corpus": "data/corpus_normal.json",
+    "fault": "none",
+    "max_steps": 10,
+    "expected": {
+      "status": "answered",
+      "answer_contains": [
+        "30"
+      ],
+      "citation_ids": [
+        "D01"
+      ]
+    }
+  },
+  {
+    "id": "T02",
+    "title": "文档冲突",
+    "question": "报销期限多久？",
+    "corpus": "data/corpus_conflict.json",
+    "fault": "none",
+    "max_steps": 10,
+    "expected": {
+      "status": "needs_clarification",
+      "answer_contains": [
+        "30",
+        "15"
+      ],
+      "citation_ids": [
+        "D01",
+        "D02"
+      ]
+    }
+  },
+  {
+    "id": "T03",
+    "title": "资料外问题",
+    "question": "公司停车位如何申请？",
+    "corpus": "data/corpus_normal.json",
+    "fault": "none",
+    "max_steps": 10,
+    "expected": {
+      "status": "insufficient_evidence",
+      "answer_contains": [],
+      "citation_ids": []
+    }
+  },
+  {
+    "id": "T04",
+    "title": "改写后的相似问题",
+    "question": "费用最迟什么时候能报？",
+    "corpus": "data/corpus_normal.json",
+    "fault": "none",
+    "max_steps": 10,
+    "expected": {
+      "status": "answered",
+      "answer_contains": [
+        "30"
+      ],
+      "citation_ids": [
+        "D01"
+      ]
+    }
+  },
+  {
+    "id": "T05",
+    "title": "上下文追问",
+    "question": "那期限呢？",
+    "history": [
+      {
+        "role": "user",
+        "content": "我想了解公司的报销制度。"
+      },
+      {
+        "role": "assistant",
+        "content": "你想了解报销制度的哪一方面？"
+      }
+    ],
+    "corpus": "data/corpus_normal.json",
+    "fault": "none",
+    "max_steps": 10,
+    "expected": {
+      "status": "answered",
+      "answer_contains": [
+        "30"
+      ],
+      "citation_ids": [
+        "D01"
+      ]
+    }
+  },
+  {
+    "id": "T06",
+    "title": "工具短暂失败后恢复",
+    "question": "报销期限多久？",
+    "corpus": "data/corpus_normal.json",
+    "fault": "search_once",
+    "max_steps": 10,
+    "expected": {
+      "status": "answered",
+      "answer_contains": [
+        "30"
+      ],
+      "citation_ids": [
+        "D01"
+      ]
+    }
+  },
+  {
+    "id": "T07",
+    "title": "工具持续失败",
+    "question": "报销期限多久？",
+    "corpus": "data/corpus_normal.json",
+    "fault": "search_always",
+    "max_steps": 10,
+    "expected": {
+      "status": "incomplete",
+      "answer_contains": [],
+      "citation_ids": []
+    }
+  },
+  {
+    "id": "T08",
+    "title": "文档替换后答案变化",
+    "question": "报销期限多久？",
+    "corpus": "data/corpus_changed.json",
+    "fault": "none",
+    "max_steps": 10,
+    "expected": {
+      "status": "answered",
+      "answer_contains": [
+        "45"
+      ],
+      "citation_ids": [
+        "D01"
+      ]
+    }
+  },
+  {
+    "id": "T09",
+    "title": "新增冲突后动作及状态变化",
+    "question": "报销期限多久？",
+    "corpus": "data/corpus_conflict.json",
+    "fault": "none",
+    "max_steps": 10,
+    "expected": {
+      "status": "needs_clarification",
+      "answer_contains": [
+        "30",
+        "15"
+      ],
+      "citation_ids": [
+        "D01",
+        "D02"
+      ]
+    }
+  },
+  {
+    "id": "T10",
+    "title": "达到步数上限",
+    "question": "报销期限多久？",
+    "corpus": "data/corpus_normal.json",
+    "fault": "none",
+    "max_steps": 1,
+    "expected": {
+      "status": "incomplete",
+      "answer_contains": [],
+      "citation_ids": []
+    }
+  }
+]

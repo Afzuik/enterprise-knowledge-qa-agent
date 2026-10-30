@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "考核规则.md": true,
+    "项目要求.md": true
+  },
+  "commands": [
+    {
+      "command": [
+        "git",
+        "worktree",
+        "add",
+        "--detach",
+        "/var/folders/k9/gn56s6ln44b72lp0bwzwk0b40000gn/T/knowledge-baseline-q_klhcmb/baseline",
+        "459863f"
+      ],
+      "stdout": "HEAD is now at 459863f chore: preserve original assessment requirements\n",
+      "stderr": "Preparing worktree (detached HEAD 459863f)\n",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "git",
+        "worktree",
+        "remove",
+        "/var/folders/k9/gn56s6ln44b72lp0bwzwk0b40000gn/T/knowledge-baseline-q_klhcmb/baseline"
+      ],
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "passed": true
+}

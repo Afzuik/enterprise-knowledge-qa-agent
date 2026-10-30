@@ -1,0 +1,10 @@
+[
+  {
+    "role": "user",
+    "content": "我想咨询费用报销制度。"
+  },
+  {
+    "role": "assistant",
+    "content": "好的，你想了解费用报销的哪个方面？"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "answer": "根据《费用报销制度》，报销期限为 30 天。但该规定未说明 30 天从何时起算（如发票日期、费用发生日期或报销单提交日期），因此无法据此换算出具体的最后报销日期。建议向财务部门确认起算口径。",
+  "citations": [
+    {
+      "doc_id": "D01",
+      "chunk_id": "D01-C01",
+      "version_date": "2026-01-01",
+      "quote": "报销期限为 30 天。"
+    }
+  ],
+  "gaps": [
+    "制度仅规定“报销期限为 30 天”，未明确起算日期及逾期处理方式"
+  ],
+  "status": "answered",
+  "clarification_question": "请问您需要确认的是 30 天从发票开具日、费用发生日还是其他日期起算吗？",
+  "reason": "model_finished",
+  "metadata": {
+    "source_sha256": "1d3e43dd828fbc0b63c7c891058b4bedadcc9bf5a1b0c623dd8dcc5eacb5dbf0",
+    "run_id": "78c3d4e2-22ff-430d-853c-b32bb6788db9",
+    "started_at": "2026-10-30T06:55:11.543466+00:00",
+    "mode": "live",
+    "model": "deepseek-flash",
+    "corpus_sha256": "4b8955de837ee75f9836b777693b9c4226986fa36f59cb9deec08132c9520404",
+    "max_steps": 10,
+    "evidence_scope": "本轮已读取的资料，不保证知识库完整召回",
+    "mock_disclaimer": "",
+    "steps": 4,
+    "duration_ms": 6506.59
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "status": "incomplete",
+  "answer": "本次任务未完成，不能据此给出可靠答案。",
+  "citations": [],
+  "gaps": [
+    "step_limit"
+  ],
+  "clarification_question": "",
+  "reason": "step_limit",
+  "metadata": {
+    "source_sha256": "1d3e43dd828fbc0b63c7c891058b4bedadcc9bf5a1b0c623dd8dcc5eacb5dbf0",
+    "run_id": "d310088b-87d2-4113-8749-ea3c55caa85a",
+    "started_at": "2026-10-30T06:57:27.445407+00:00",
+    "mode": "mock",
+    "model": "offline-rule-mock",
+    "corpus_sha256": "4b8955de837ee75f9836b777693b9c4226986fa36f59cb9deec08132c9520404",
+    "max_steps": 1,
+    "evidence_scope": "本轮已读取的资料，不保证知识库完整召回",
+    "mock_disclaimer": "Mock仅验证流程，不证明真实模型决策效果",
+    "steps": 1,
+    "duration_ms": 1.32
+  }
+}

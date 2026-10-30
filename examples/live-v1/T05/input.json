@@ -1,0 +1,17 @@
+{
+  "question": "那期限呢？",
+  "history": [
+    {
+      "role": "user",
+      "content": "我想了解公司的报销制度。"
+    },
+    {
+      "role": "assistant",
+      "content": "你想了解报销制度的哪一方面？"
+    }
+  ],
+  "corpus": "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/data/corpus_normal.json",
+  "fault": "none",
+  "mode": "live",
+  "max_steps": 10
+}
