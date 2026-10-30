@@ -1,0 +1,12 @@
+{
+  "source_sha256": "a1d89f0df39a1468846d554468f2958f7ea2c82e568f454217d29c4e6a7e6369",
+  "checks": {
+    "normal_to_changed_answer": true,
+    "changed_quote_20": true,
+    "normal_to_conflict_status": true,
+    "conflict_changes_actions": true,
+    "explicit_priority_resolves": true
+  },
+  "passed": true,
+  "evidence_root": "examples/audit-final-v3/extended"
+}

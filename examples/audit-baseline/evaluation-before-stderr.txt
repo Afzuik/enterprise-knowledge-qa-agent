@@ -1,0 +1,68 @@
+test_conflict_reread_after_followup_search_is_valid (test_audit_evaluation.AuditEvaluationTests) ... FAIL
+test_declared_alternative_citation_sets (test_audit_evaluation.AuditEvaluationTests) ... FAIL
+test_declared_answer_excludes_and_quote_contains (test_audit_evaluation.AuditEvaluationTests) ... FAIL
+test_declared_conflict_checks_do_not_depend_on_case_id (test_audit_evaluation.AuditEvaluationTests) ... FAIL
+test_declared_reason_is_enforced (test_audit_evaluation.AuditEvaluationTests) ... FAIL
+test_declared_required_reads_are_enforced (test_audit_evaluation.AuditEvaluationTests) ... FAIL
+test_declared_tool_recovery_is_enforced (test_audit_evaluation.AuditEvaluationTests) ... FAIL
+
+======================================================================
+FAIL: test_conflict_reread_after_followup_search_is_valid (test_audit_evaluation.AuditEvaluationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_evaluation.py", line 34, in test_conflict_reread_after_followup_search_is_valid
+    self.assertTrue(all(check_case(self.case, self.result, events, 0).values()))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_declared_alternative_citation_sets (test_audit_evaluation.AuditEvaluationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_evaluation.py", line 48, in test_declared_alternative_citation_sets
+    self.assertTrue(all(check_case(self.case, self.result, events, 0).values()))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_declared_answer_excludes_and_quote_contains (test_audit_evaluation.AuditEvaluationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_evaluation.py", line 55, in test_declared_answer_excludes_and_quote_contains
+    self.assertFalse(all(check_case(self.case, self.result, events, 0).values()))
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_declared_conflict_checks_do_not_depend_on_case_id (test_audit_evaluation.AuditEvaluationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_evaluation.py", line 37, in test_declared_conflict_checks_do_not_depend_on_case_id
+    self.assertFalse(all(check_case(self.case, self.result, self.reads, 0).values()))
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_declared_reason_is_enforced (test_audit_evaluation.AuditEvaluationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_evaluation.py", line 64, in test_declared_reason_is_enforced
+    self.assertFalse(all(check_case(self.case, self.result, events, 0).values()))
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_declared_required_reads_are_enforced (test_audit_evaluation.AuditEvaluationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_evaluation.py", line 42, in test_declared_required_reads_are_enforced
+    self.assertFalse(all(check_case(self.case, self.result, self.reads+[self.search], 0).values()))
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_declared_tool_recovery_is_enforced (test_audit_evaluation.AuditEvaluationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_evaluation.py", line 69, in test_declared_tool_recovery_is_enforced
+    self.assertFalse(all(check_case(self.case, self.result, events, 0).values()))
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+FAILED (failures=7)

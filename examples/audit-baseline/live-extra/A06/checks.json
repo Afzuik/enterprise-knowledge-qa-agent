@@ -1,0 +1,17 @@
+{
+  "id": "A06",
+  "title": "原文持续失败不得拿摘要作证",
+  "checks": {
+    "status": true,
+    "answer_contains": true,
+    "citation_ids": true,
+    "exit_code": true,
+    "trace_present": true,
+    "citations_grounded": true,
+    "gaps_present": true
+  },
+  "passed": true,
+  "status": "incomplete",
+  "steps": 5,
+  "artifacts": "A06/"
+}

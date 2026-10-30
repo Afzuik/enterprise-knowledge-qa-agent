@@ -5,17 +5,17 @@
 ## 本次结果与评审入口
 
 - Python 3.9.6 / macOS 实际运行，标准库实现，无第三方依赖。
-- **73 项自动化测试通过**：[原始日志](examples/verification/01-stderr.txt)、[命令和退出状态](examples/verification/verification.json)。
-- 真实模型（配置标识 `deepseek-flash`）第二轮 **10/10 固定验收用例通过**：[汇总](examples/live-v2/summary.json)、[逐项语义复核](docs/live-review.md)。这是本次合成小样本单轮结果，不是生产准确率承诺。
-- 离线 Mock **10/10 流程用例通过**：[汇总](examples/verification/mock/summary.json)。Mock 不证明模型决策效果。
+- **109 项自动化测试通过**：[原始日志](examples/audit-final-v3/verification/01-stderr.txt)、[命令和退出状态](examples/audit-final-v3/verification/verification.json)。
+- 真实模型（配置标识 `deepseek-flash`）审查后 **原必验10/10 + 扩展10/10通过**：[原必验汇总](examples/audit-final-v3/required/summary.json)、[扩展汇总](examples/audit-final-v3/extended/summary.json)、[全面审查](docs/06-audit.md)、[逐项语义复核](docs/audit/live-semantic-review.md)。这是固定合成小样本的结果，不是生产准确率承诺。
+- 离线 Mock **10/10 流程用例通过**：[汇总](examples/audit-final-v3/verification/mock/summary.json)。Mock 不证明模型决策效果。
 - 第一轮真实模型 **8/10**，两个用例格式错误耗尽预算，失败记录完整保留：[首轮汇总](examples/live-v1/summary.json)。
 - 两份原始要求未修改，SHA256 见 [源文件摘要](docs/source-sha256.json)。
 
 先看三条真实路径：
 
-1. [明确回答](examples/live-v2/T01/output.json) / [Trace](examples/live-v2/T01/trace.jsonl)：检索→读 D01→回答30天。
-2. [冲突处理](examples/live-v2/T02/output.json) / [Trace](examples/live-v2/T02/trace.jsonl)：读取双方→补查→列出30/15天并追问，不选择较新版本。
-3. [工具恢复](examples/live-v2/T06/output.json) / [Trace](examples/live-v2/T06/trace.jsonl)：错误观察→重新检索→读取→回答。
+1. [明确回答](examples/audit-final-v3/required/T01/output.json) / [Trace](examples/audit-final-v3/required/T01/trace.jsonl)：检索→读 D01→回答30天。
+2. [冲突处理](examples/audit-final-v3/required/T02/output.json) / [Trace](examples/audit-final-v3/required/T02/trace.jsonl)：读取双方→补查→列出30/15天并追问，不选择较新版本。
+3. [工具恢复](examples/audit-final-v3/required/T06/output.json) / [Trace](examples/audit-final-v3/required/T06/trace.jsonl)：错误观察→重新检索→读取→回答。
 
 ## 环境与快速运行
 
@@ -67,6 +67,7 @@ PYTHONPATH=src python3 -m unittest discover -s tests -v
 # 十项验收，包含资料外、冲突、历史、文档变更、失败和预算
 python3 run.py evaluate --mode mock --output examples/local/mock-review
 python3 run.py evaluate --mode live --output examples/local/live-review
+python3 run.py evaluate --mode live --cases data/audit_cases.json --output examples/local/extended-review
 
 # 离线完整验证，保留每条实际命令、stdout/stderr、退出码
 python3 scripts/verify.py --output examples/local/verification-review
@@ -89,8 +90,10 @@ requirements.txt       标准库项目，无第三方依赖
 .env                   本地私密配置，Git忽略，不提交
 data/                  合成语料、验收输入、历史
 examples/live-v1/       首轮真实运行及失败
-examples/live-v2/       修复后真实运行
-examples/verification/  最终工程测试和离线流程验证
+examples/live-v2/       首次交付历史真实运行
+examples/audit-baseline/ 第二次审查修复前记录
+examples/audit-final*/  审查迭代记录（最终为audit-final-v3）
+examples/verification/  首次交付历史验证；当前见audit-final-v3/verification
 examples/local/        用户复跑输出，Git忽略
 tests/                 可执行测试
 docs/                  要求、设计、评估、AI使用、复盘、审计记录

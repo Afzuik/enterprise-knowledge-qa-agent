@@ -52,7 +52,8 @@ class EvaluationChecksTests(unittest.TestCase):
     def test_tool_recovery_requires_observed_failure_first(self):
         self.case['id'] = 'T06'
         failed = {'action': 'search_docs', 'observation': {'ok': False}}
-        checks = check_case(self.case, self.result, [failed] + self.events, 0)
+        recovered = {'action': 'search_docs', 'observation': {'ok': True, 'results': []}}
+        checks = check_case(self.case, self.result, [failed, recovered] + self.events, 0)
         self.assertTrue(checks['observed_failure_then_recovery'])
         checks = check_case(self.case, self.result, self.events + [failed], 0)
         self.assertFalse(checks['observed_failure_then_recovery'])

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python3",
+    "run.py",
+    "evaluate",
+    "--mode",
+    "live",
+    "--output",
+    "examples/audit-final-v2/required"
+  ],
+  "cwd": "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent",
+  "started_at": "2026-10-30T07:18:47.681912+00:00",
+  "finished_at": "2026-10-30T07:19:55.426698+00:00",
+  "exit_code": 1
+}

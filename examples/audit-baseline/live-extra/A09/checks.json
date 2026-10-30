@@ -1,0 +1,16 @@
+{
+  "id": "A09",
+  "title": "明确替代关系可以消歧",
+  "checks": {
+    "status": true,
+    "answer_contains": true,
+    "citation_ids": false,
+    "exit_code": true,
+    "trace_present": true,
+    "citations_grounded": true
+  },
+  "passed": false,
+  "status": "answered",
+  "steps": 4,
+  "artifacts": "A09/"
+}

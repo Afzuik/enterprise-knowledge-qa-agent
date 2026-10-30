@@ -1,0 +1,24 @@
+{
+  "answer": "未能完成核验：检索到片段 D05-C01 摘要显示“影云”标准版支持导出 MP4 文件，但对应的原文读取工具连续两次返回可重试故障，无法成功读取原文，因此不能据此给出附准确引用的确定答案。",
+  "citations": [],
+  "gaps": [
+    "未能读取 D05-C01 原文，无法提供符合要求的准确引用",
+    "缺少可读取的导出格式制度或产品原文"
+  ],
+  "status": "incomplete",
+  "clarification_question": "",
+  "reason": "model_finished",
+  "metadata": {
+    "source_sha256": "9b91aba1f752d57d5a2c85735ef6e3fd445d2d82e3069bc868faa900bb21e1be",
+    "run_id": "003585f2-f411-4b91-9f7e-1834a5e0265b",
+    "started_at": "2026-10-30T07:19:12.256722+00:00",
+    "mode": "live",
+    "model": "deepseek-flash",
+    "corpus_sha256": "4b8955de837ee75f9836b777693b9c4226986fa36f59cb9deec08132c9520404",
+    "max_steps": 10,
+    "evidence_scope": "本轮已读取的资料，不保证知识库完整召回",
+    "mock_disclaimer": "",
+    "steps": 5,
+    "duration_ms": 7419.71
+  }
+}

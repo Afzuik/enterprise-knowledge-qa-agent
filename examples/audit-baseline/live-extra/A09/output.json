@@ -1,0 +1,34 @@
+{
+  "answer": "按《星舟团队版协作人数优先适用说明》，自 2026-10-01 起，星舟团队版每个项目最多可邀请 12 名协作者。此前 P101 曾规定最多 8 名，但 P103 明确说明其协作者人数条款优先适用，并替代 P101 和 P102 中的协作者人数条款。",
+  "citations": [
+    {
+      "doc_id": "P103",
+      "chunk_id": "P103-C01",
+      "version_date": "2026-10-01",
+      "quote": "自 2026-10-01 起，星舟团队版每个项目最多可邀请 12 名协作者；本条优先适用，替代 P101 和 P102 中的协作者人数条款。"
+    },
+    {
+      "doc_id": "P101",
+      "chunk_id": "P101-C01",
+      "version_date": "2026-08-01",
+      "quote": "星舟团队版每个项目最多可邀请 8 名协作者。"
+    }
+  ],
+  "gaps": [],
+  "status": "answered",
+  "clarification_question": "",
+  "reason": "model_finished",
+  "metadata": {
+    "source_sha256": "1d3e43dd828fbc0b63c7c891058b4bedadcc9bf5a1b0c623dd8dcc5eacb5dbf0",
+    "run_id": "9d0c7bf3-d207-426e-a581-949f16641461",
+    "started_at": "2026-10-30T07:09:43.355178+00:00",
+    "mode": "live",
+    "model": "deepseek-flash",
+    "corpus_sha256": "d164b0a82a005383e9972abdd531b8bf7bcdeca66bc1b3236851a7bafa489ca4",
+    "max_steps": 10,
+    "evidence_scope": "本轮已读取的资料，不保证知识库完整召回",
+    "mock_disclaimer": "",
+    "steps": 4,
+    "duration_ms": 9194.59
+  }
+}

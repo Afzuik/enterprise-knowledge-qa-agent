@@ -1,0 +1,37 @@
+{
+  "answer": "现有资料对星舟团队版每个项目的协作者上限存在冲突：一份 FAQ 写为最多 8 名，另一份补充 FAQ 写为最多 12 名；两份文档的适用范围均为“星舟团队版”，优先级均为 null，且未检索到说明版本替代关系或适用条件差异的资料。因此不能擅自确定上限，请确认应以哪份制度为准。",
+  "citations": [
+    {
+      "doc_id": "P101",
+      "chunk_id": "P101-C01",
+      "version_date": "2026-08-01",
+      "quote": "星舟团队版每个项目最多可邀请 8 名协作者。"
+    },
+    {
+      "doc_id": "P102",
+      "chunk_id": "P102-C01",
+      "version_date": "2026-09-01",
+      "quote": "星舟团队版每个项目最多可邀请 12 名协作者。"
+    }
+  ],
+  "gaps": [
+    "两份同适用范围文档对协作者上限分别给出 8 名和 12 名，缺少优先级、替代关系或适用条件说明",
+    "未找到可确定哪份制度现行的消歧依据"
+  ],
+  "status": "needs_clarification",
+  "clarification_question": "星舟团队版项目协作者上限应以 8 名还是 12 名为准？是否有更新的正式制度或版本替代说明可供确认？",
+  "reason": "model_finished",
+  "metadata": {
+    "source_sha256": "88f5cb4f58e28a53b210c986ed306c76bc4a800f4350c128e1aad8f78190e225",
+    "run_id": "a91082c7-3ad0-47fc-b1c2-140a20d025f4",
+    "started_at": "2026-10-30T07:16:36.938902+00:00",
+    "mode": "live",
+    "model": "deepseek-flash",
+    "corpus_sha256": "eb3ef20e2b270d37c2815d7ef0ddc0ad4eb0f9a833b63796f07d55edf0267a89",
+    "max_steps": 10,
+    "evidence_scope": "本轮已读取的资料，不保证知识库完整召回",
+    "mock_disclaimer": "",
+    "steps": 5,
+    "duration_ms": 7144.0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "answer": "根据本轮读取的《星舟团队版协作者人数 FAQ》，星舟团队版每个项目最多可邀请 8 名协作者。",
+  "citations": [
+    {
+      "doc_id": "P101",
+      "chunk_id": "P101-C01",
+      "version_date": "2026-08-01",
+      "quote": "星舟团队版每个项目最多可邀请 8 名协作者。"
+    }
+  ],
+  "gaps": [
+    "该片段未说明“协作者”是否包含项目所有者或管理员，也未说明超出上限时的处理方式。"
+  ],
+  "status": "answered",
+  "clarification_question": "",
+  "reason": "model_finished",
+  "metadata": {
+    "source_sha256": "a1d89f0df39a1468846d554468f2958f7ea2c82e568f454217d29c4e6a7e6369",
+    "run_id": "7d370cc9-04c6-4e25-82e8-580126d34e04",
+    "started_at": "2026-10-30T07:22:58.546127+00:00",
+    "mode": "live",
+    "model": "deepseek-flash",
+    "corpus_sha256": "7208bcfb1778d7c64a0199019a55bfab37df912c59b7b5269fe40bb435bffd76",
+    "max_steps": 10,
+    "evidence_scope": "本轮已读取的资料，不保证知识库完整召回",
+    "mock_disclaimer": "",
+    "steps": 3,
+    "duration_ms": 4039.69
+  }
+}

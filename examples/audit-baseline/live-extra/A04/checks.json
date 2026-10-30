@@ -1,0 +1,17 @@
+{
+  "id": "A04",
+  "title": "相关候选不支持所问事实",
+  "checks": {
+    "status": true,
+    "answer_contains": true,
+    "citation_ids": false,
+    "exit_code": true,
+    "trace_present": true,
+    "citations_grounded": true,
+    "gaps_present": true
+  },
+  "passed": false,
+  "status": "insufficient_evidence",
+  "steps": 5,
+  "artifacts": "A04/"
+}

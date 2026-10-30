@@ -30,3 +30,7 @@ git worktree add --detach ../knowledge-agent-baseline 459863f
 ```
 
 不建议 `reset --hard` 或 `git clean`，避免删除用户本地配置及复跑记录。`.env` 是未跟踪的本地文件，恢复 Git 提交不会恢复或删除它。提交前已在额外临时工作树核验基线文件哈希，最终实现和运行记录保留在本目录。
+
+## 第二次审查的差异与恢复
+
+审查前版本为 `2c9dbbae1f95d98d38af49c6418a12a0515404b8`。可用 `git diff 2c9dbba HEAD -- src tests data docs README.md` 查看本次全部改动。额外临时工作树已逐一核对该版本342个文件的原始SHA256，见 [恢复验证](audit/recovery-verification.json)；没有在当前目录执行破坏性恢复。需要查看旧实现可执行 `git worktree add --detach ../knowledge-agent-pre-audit 2c9dbba`，不影响最终实现和本地.env。

@@ -1,0 +1,8 @@
+{
+  "question": "影云标准版明确支持导出哪种文件格式？",
+  "history": [],
+  "corpus": "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/data/corpus_normal.json",
+  "fault": "none",
+  "mode": "live",
+  "max_steps": 10
+}

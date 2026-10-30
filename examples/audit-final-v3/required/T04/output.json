@@ -1,0 +1,32 @@
+{
+  "answer": "根据本轮读取的《费用报销制度》，报销期限为 30 天。该片段未说明 30 天从何时起算、是否按自然日计算，也未说明逾期如何处理；如需确认某笔费用的具体最后报销日期，还需结合起算日或向制度归口部门确认。",
+  "citations": [
+    {
+      "doc_id": "D01",
+      "chunk_id": "D01-C01",
+      "version_date": "2026-01-01",
+      "quote": "报销期限为 30 天。"
+    }
+  ],
+  "gaps": [
+    "未载明报销期限的起算时点（如发票日期、费用发生日或出差结束日）",
+    "未说明是否按自然日或工作日计算",
+    "未说明逾期报销的处理规则"
+  ],
+  "status": "answered",
+  "clarification_question": "",
+  "reason": "model_finished",
+  "metadata": {
+    "source_sha256": "a1d89f0df39a1468846d554468f2958f7ea2c82e568f454217d29c4e6a7e6369",
+    "run_id": "59458072-9953-44dc-a16d-a2c7204159f2",
+    "started_at": "2026-10-30T07:23:12.686354+00:00",
+    "mode": "live",
+    "model": "deepseek-flash",
+    "corpus_sha256": "4b8955de837ee75f9836b777693b9c4226986fa36f59cb9deec08132c9520404",
+    "max_steps": 10,
+    "evidence_scope": "本轮已读取的资料，不保证知识库完整召回",
+    "mock_disclaimer": "",
+    "steps": 5,
+    "duration_ms": 8452.91
+  }
+}

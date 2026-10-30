@@ -1,0 +1,36 @@
+{
+  "status": "needs_clarification",
+  "answer": "资料存在冲突：D01：报销期限为 30 天。；D02：报销期限为 15 天。 无法确认适用制度。",
+  "citations": [
+    {
+      "doc_id": "D01",
+      "chunk_id": "D01-C01",
+      "version_date": "2026-01-01",
+      "quote": "报销期限为 30 天。"
+    },
+    {
+      "doc_id": "D02",
+      "chunk_id": "D02-C01",
+      "version_date": "2026-02-01",
+      "quote": "报销期限为 15 天。"
+    }
+  ],
+  "gaps": [
+    "缺少适用范围与优先级；离线Mock不具备通用冲突消歧能力"
+  ],
+  "clarification_question": "请确认适用制度或提供制度优先级、适用范围的依据。",
+  "reason": "model_finished",
+  "metadata": {
+    "source_sha256": "9b91aba1f752d57d5a2c85735ef6e3fd445d2d82e3069bc868faa900bb21e1be",
+    "run_id": "40f29da9-e2ad-48c4-bd96-cbeccd913ae6",
+    "started_at": "2026-10-30T07:18:29.215201+00:00",
+    "mode": "mock",
+    "model": "offline-rule-mock",
+    "corpus_sha256": "31fed8f2d10eedbc2c6bddf3eb098327df0c005c69d317c4b74678739dc2b9bd",
+    "max_steps": 10,
+    "evidence_scope": "本轮已读取的资料，不保证知识库完整召回",
+    "mock_disclaimer": "Mock仅验证流程，不证明真实模型决策效果",
+    "steps": 5,
+    "duration_ms": 1.63
+  }
+}

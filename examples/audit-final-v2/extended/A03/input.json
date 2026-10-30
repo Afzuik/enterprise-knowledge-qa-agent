@@ -1,0 +1,17 @@
+{
+  "question": "那它可以导出成什么格式？",
+  "history": [
+    {
+      "role": "user",
+      "content": "我们只讨论影云标准版。"
+    },
+    {
+      "role": "assistant",
+      "content": "好的，请问你想了解影云标准版的哪项功能？"
+    }
+  ],
+  "corpus": "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/data/corpus_normal.json",
+  "fault": "none",
+  "mode": "live",
+  "max_steps": 10
+}

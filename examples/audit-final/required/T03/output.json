@@ -1,0 +1,23 @@
+{
+  "answer": "现有资料不足以回答“公司停车位如何申请”。多次使用不同关键词检索（公司停车位申请、停车/车位管理规定、车辆停放/通行、园区停车位审批等），均未找到停车位管理或申请制度的文档，返回结果只是请假、办公设备申领等无关内容。建议向行政或后勤管理部门确认，或补充相关制度文档后再查询。",
+  "citations": [],
+  "gaps": [
+    "知识库中未检索到停车位申请、停车管理或车辆停放相关制度文档"
+  ],
+  "status": "insufficient_evidence",
+  "clarification_question": "",
+  "reason": "model_finished",
+  "metadata": {
+    "source_sha256": "88f5cb4f58e28a53b210c986ed306c76bc4a800f4350c128e1aad8f78190e225",
+    "run_id": "88d44b10-8892-4da4-afc8-0c22961ee9d5",
+    "started_at": "2026-10-30T07:16:16.357001+00:00",
+    "mode": "live",
+    "model": "deepseek-flash",
+    "corpus_sha256": "4b8955de837ee75f9836b777693b9c4226986fa36f59cb9deec08132c9520404",
+    "max_steps": 10,
+    "evidence_scope": "本轮已读取的资料，不保证知识库完整召回",
+    "mock_disclaimer": "",
+    "steps": 5,
+    "duration_ms": 7038.31
+  }
+}

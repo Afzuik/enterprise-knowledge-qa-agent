@@ -1,0 +1,23 @@
+{
+  "answer": "现有资料不足以确认公司停车位的申请方式。",
+  "citations": [],
+  "gaps": [
+    "未检索到停车位、车位分配或车辆停放管理相关制度；返回的办公设备申领、请假申请、访客登记资料均不涉及停车位申请"
+  ],
+  "status": "insufficient_evidence",
+  "clarification_question": "",
+  "reason": "model_finished",
+  "metadata": {
+    "source_sha256": "9b91aba1f752d57d5a2c85735ef6e3fd445d2d82e3069bc868faa900bb21e1be",
+    "run_id": "4443cb13-8024-4900-b31c-321b65c072da",
+    "started_at": "2026-10-30T07:19:00.887418+00:00",
+    "mode": "live",
+    "model": "deepseek-flash",
+    "corpus_sha256": "4b8955de837ee75f9836b777693b9c4226986fa36f59cb9deec08132c9520404",
+    "max_steps": 10,
+    "evidence_scope": "本轮已读取的资料，不保证知识库完整召回",
+    "mock_disclaimer": "",
+    "steps": 4,
+    "duration_ms": 5550.94
+  }
+}

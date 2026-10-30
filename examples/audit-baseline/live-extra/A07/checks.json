@@ -1,0 +1,17 @@
+{
+  "id": "A07",
+  "title": "非D01D02产品事实冲突",
+  "checks": {
+    "status": true,
+    "answer_contains": true,
+    "citation_ids": true,
+    "exit_code": true,
+    "trace_present": true,
+    "citations_grounded": true,
+    "gaps_present": true
+  },
+  "passed": true,
+  "status": "needs_clarification",
+  "steps": 5,
+  "artifacts": "A07/"
+}

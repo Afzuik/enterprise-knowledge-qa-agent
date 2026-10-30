@@ -1,0 +1,8 @@
+{
+  "question": "公司停车位如何申请？",
+  "history": [],
+  "corpus": "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/data/corpus_normal.json",
+  "fault": "none",
+  "mode": "mock",
+  "max_steps": 10
+}

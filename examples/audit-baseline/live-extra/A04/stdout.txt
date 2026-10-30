@@ -1,0 +1,31 @@
+{
+  "answer": "现有资料不足以确认影云标准版能否导出 8K 分辨率视频。可确认的仅是：《产品文件导出 FAQ》说明影云标准版支持导出 MP4 文件，且该资料未说明其他导出格式；其中没有关于分辨率上限或是否支持 8K 的任何说明。因此不能据此推断支持或不支持 8K 导出。",
+  "citations": [
+    {
+      "doc_id": "D05",
+      "chunk_id": "D05-C01",
+      "version_date": "2026-01-01",
+      "quote": "合成产品“影云”的标准版支持导出 MP4 文件；本资料未说明其他导出格式。"
+    }
+  ],
+  "gaps": [
+    "缺少影云标准版导出分辨率规格（是否支持 8K、最高分辨率上限）的正式文档",
+    "D05 仅覆盖导出格式为 MP4，未涉及分辨率维度"
+  ],
+  "status": "insufficient_evidence",
+  "clarification_question": "是否需要向产品团队确认影云标准版的最高导出分辨率，或提供该产品的规格说明书以便进一步查证？",
+  "reason": "model_finished",
+  "metadata": {
+    "source_sha256": "1d3e43dd828fbc0b63c7c891058b4bedadcc9bf5a1b0c623dd8dcc5eacb5dbf0",
+    "run_id": "fff703a5-6445-4295-aa3f-1bc77e2ec5ce",
+    "started_at": "2026-10-30T07:09:11.976276+00:00",
+    "mode": "live",
+    "model": "deepseek-flash",
+    "corpus_sha256": "4b8955de837ee75f9836b777693b9c4226986fa36f59cb9deec08132c9520404",
+    "max_steps": 10,
+    "evidence_scope": "本轮已读取的资料，不保证知识库完整召回",
+    "mock_disclaimer": "",
+    "steps": 5,
+    "duration_ms": 8121.21
+  }
+}

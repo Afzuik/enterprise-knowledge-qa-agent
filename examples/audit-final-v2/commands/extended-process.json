@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "run.py",
+    "evaluate",
+    "--mode",
+    "live",
+    "--cases",
+    "data/audit_cases.json",
+    "--output",
+    "examples/audit-final-v2/extended"
+  ],
+  "cwd": "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent",
+  "started_at": "2026-10-30T07:18:47.682075+00:00",
+  "finished_at": "2026-10-30T07:19:48.084909+00:00",
+  "exit_code": 0
+}

@@ -1,0 +1,30 @@
+{
+  "answer": "根据本轮读取的《产品文件导出 FAQ》，影云标准版支持导出 MP4 文件；该资料未说明其他导出格式。",
+  "citations": [
+    {
+      "doc_id": "D05",
+      "chunk_id": "D05-C01",
+      "version_date": "2026-01-01",
+      "quote": "合成产品“影云”的标准版支持导出 MP4 文件；本资料未说明其他导出格式。"
+    }
+  ],
+  "gaps": [
+    "该资料仅说明 MP4，未载明是否还支持其他导出格式"
+  ],
+  "status": "answered",
+  "clarification_question": "",
+  "reason": "model_finished",
+  "metadata": {
+    "source_sha256": "a1d89f0df39a1468846d554468f2958f7ea2c82e568f454217d29c4e6a7e6369",
+    "run_id": "13a3aadd-ef62-4f3c-8b37-c92e0f9a00ef",
+    "started_at": "2026-10-30T07:22:54.556504+00:00",
+    "mode": "live",
+    "model": "deepseek-flash",
+    "corpus_sha256": "4b8955de837ee75f9836b777693b9c4226986fa36f59cb9deec08132c9520404",
+    "max_steps": 10,
+    "evidence_scope": "本轮已读取的资料，不保证知识库完整召回",
+    "mock_disclaimer": "",
+    "steps": 3,
+    "duration_ms": 3934.12
+  }
+}

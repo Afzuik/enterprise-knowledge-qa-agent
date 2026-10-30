@@ -1,0 +1,32 @@
+{
+  "base_commit": "2c9dbbae1f95d98d38af49c6418a12a0515404b8",
+  "checked_files": 342,
+  "all_original_hashes_match": true,
+  "commands": [
+    {
+      "command": [
+        "git",
+        "worktree",
+        "add",
+        "--detach",
+        "/var/folders/k9/gn56s6ln44b72lp0bwzwk0b40000gn/T/knowledge-audit-recovery-4yubbmsh/baseline",
+        "2c9dbbae1f95d98d38af49c6418a12a0515404b8"
+      ],
+      "stdout": "HEAD is now at 2c9dbba feat: implement bounded knowledge agent with verified live and offline evaluations\n",
+      "stderr": "Preparing worktree (detached HEAD 2c9dbba)\n",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "git",
+        "worktree",
+        "remove",
+        "/var/folders/k9/gn56s6ln44b72lp0bwzwk0b40000gn/T/knowledge-audit-recovery-4yubbmsh/baseline"
+      ],
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "passed": true
+}

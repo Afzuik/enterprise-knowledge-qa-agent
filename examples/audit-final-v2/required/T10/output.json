@@ -1,0 +1,23 @@
+{
+  "answer": "本轮决策预算仅允许一次动作，无法先检索并读取相关制度原文，因此暂不能给出可靠的报销期限答案。",
+  "citations": [],
+  "gaps": [
+    "尚未执行检索与原文读取，缺少报销期限制度依据"
+  ],
+  "status": "incomplete",
+  "clarification_question": "",
+  "reason": "model_finished",
+  "metadata": {
+    "source_sha256": "9b91aba1f752d57d5a2c85735ef6e3fd445d2d82e3069bc868faa900bb21e1be",
+    "run_id": "3d64f568-dbc7-450f-9863-7140f17ee73f",
+    "started_at": "2026-10-30T07:19:45.471486+00:00",
+    "mode": "live",
+    "model": "deepseek-flash",
+    "corpus_sha256": "4b8955de837ee75f9836b777693b9c4226986fa36f59cb9deec08132c9520404",
+    "max_steps": 1,
+    "evidence_scope": "本轮已读取的资料，不保证知识库完整召回",
+    "mock_disclaimer": "",
+    "steps": 1,
+    "duration_ms": 9928.34
+  }
+}

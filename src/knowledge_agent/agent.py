@@ -21,7 +21,7 @@ def validate_action(action):
         raise ValueError('未知动作')
     if not isinstance(args, dict):
         raise ValueError('arguments 必须为对象')
-    if not isinstance(action['decision_summary'], str) or not 1 <= len(action['decision_summary']) <= 500:
+    if not isinstance(action['decision_summary'], str) or not 1 <= len(action['decision_summary'].strip()) <= 500:
         raise ValueError('decision_summary 必须为 1～500 字的简短依据')
     if name == 'search_docs':
         if not {'query'} <= set(args) or set(args) - {'query', 'top_k'}:
@@ -43,7 +43,7 @@ def validate_finish(args, evidence, successful_searches, unresolved_error):
         raise ValueError('finish 字段必须为 answer/citations/gaps/status/clarification_question')
     if not isinstance(args['status'], str) or args['status'] not in STATUSES:
         raise ValueError('非法任务状态')
-    if not isinstance(args['answer'], str) or not 1 <= len(args['answer']) <= 8000:
+    if not isinstance(args['answer'], str) or not args['answer'].strip() or len(args['answer']) > 8000:
         raise ValueError('answer 必须是非空文本，最多8000字')
     if not isinstance(args['clarification_question'], str):
         raise ValueError('clarification_question 必须为文本，无需追问时为空串')
@@ -71,12 +71,37 @@ def validate_finish(args, evidence, successful_searches, unresolved_error):
         raise ValueError('尚无成功检索，不能报告已回答或资料不足')
     if status == 'answered' and not args['citations']:
         raise ValueError('事实回答必须提供本轮原文引用')
-    if status == 'insufficient_evidence' and unresolved_error:
-        raise ValueError('存在未恢复工具故障，应返回 incomplete 而非资料不足')
+    if status in ('answered', 'insufficient_evidence') and unresolved_error:
+        raise ValueError('存在未恢复工具故障，可能缺失关键或冲突证据；请恢复对应工具，或返回 incomplete，不能报告已回答/资料不足')
     if status != 'answered' and not args['gaps']:
         raise ValueError('非 answered 状态必须说明资料缺口或未完成原因')
     if status == 'needs_clarification' and not args['clarification_question'].strip():
         raise ValueError('需澄清时必须提供问题')
+
+
+def validate_observation(name, args, value):
+    """Fail closed on malformed or misrouted tool responses; never trust ok alone."""
+    invalid = {'ok': False, 'error': {'code': 'invalid_tool_response',
+               'message': '工具响应结构或请求身份不匹配；未获得可靠资料', 'retryable': True}}
+    if not isinstance(value, dict) or type(value.get('ok')) is not bool:
+        return invalid
+    if not value['ok']:
+        error = value.get('error')
+        if not isinstance(error, dict) or not isinstance(error.get('code'), str) or not isinstance(error.get('message'), str):
+            return invalid
+        return value
+    if name == 'search_docs':
+        if not isinstance(value.get('results'), list) or type(value.get('truncated')) is not bool:
+            return invalid
+        for candidate in value['results']:
+            if not isinstance(candidate, dict) or any(not isinstance(candidate.get(k), str) or not candidate[k].strip() for k in ('doc_id', 'chunk_id', 'snippet')):
+                return invalid
+    elif name == 'read_doc':
+        if any(not isinstance(value.get(k), str) or not value[k].strip() for k in ('doc_id', 'chunk_id', 'version_date', 'text')):
+            return invalid
+        if value['doc_id'] != args['doc_id'] or value['chunk_id'] != args['chunk_id']:
+            return invalid
+    return value
 
 
 class Agent:
@@ -130,9 +155,9 @@ class Agent:
             except Exception as exc:
                 code = getattr(exc, 'code', 'model_error')
                 # Exception details can contain HTTP headers or secrets: never persist them.
-                code = code if code in {'config_missing', 'invalid_model_output', 'invalid_request', 'network_error', 'http_error', 'response_too_large', 'config_invalid', 'model_timeout'} else 'model_error'
+                code = code if isinstance(code, str) and code in {'config_missing', 'invalid_model_output', 'invalid_request', 'network_error', 'http_error', 'response_too_large', 'config_invalid', 'model_timeout'} else 'model_error'
                 hint = getattr(exc, 'hint', None)
-                hint = hint if hint in {'invalid_json', 'missing_action_fields', 'invalid_envelope', 'non_text_content', 'response_too_large'} else None
+                hint = hint if isinstance(hint, str) and hint in {'invalid_json', 'missing_action_fields', 'invalid_envelope', 'non_text_content', 'response_too_large'} else None
                 event['observation'] = {'ok': False, 'error': {'code': code, 'hint': hint, 'message': '模型调用失败（敏感响应已省略）'}}
                 event['elapsed_ms'] = round((time.monotonic()-step_start)*1000, 2)
                 if code != 'invalid_model_output':
@@ -150,8 +175,7 @@ class Agent:
                     return complete(args, 'model_finished')
                 try:
                     observation = getattr(self.tools, name)(**args)
-                    if not isinstance(observation, dict) or type(observation.get('ok')) is not bool:
-                        raise TypeError('invalid tool response')
+                    observation = validate_observation(name, args, observation)
                 except Exception:
                     observation = {'ok': False, 'error': {'code': 'tool_exception', 'message': '工具异常，未返回可靠资料', 'retryable': True}}
                 error_key = ('search_docs',) if name == 'search_docs' else ('read_doc', args['doc_id'], args['chunk_id'])
@@ -161,7 +185,7 @@ class Agent:
                         searches += 1
                     else:
                         if all(isinstance(observation.get(k), str) for k in ('doc_id', 'chunk_id', 'version_date', 'text')):
-                            evidence[(observation['doc_id'], observation['chunk_id'])] = observation
+                            evidence[(observation['doc_id'], observation['chunk_id'])] = dict(observation)
                         else:
                             observation = {'ok': False, 'error': {'code': 'invalid_tool_response', 'message': '读取结果缺字段', 'retryable': False}}
                             unresolved.add(error_key)

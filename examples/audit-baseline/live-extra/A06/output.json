@@ -1,0 +1,24 @@
+{
+  "answer": "检索到一条候选资料（产品文件导出 FAQ）的摘要称“影云”标准版支持导出 MP4 文件，但读取该片段原文连续三次因工具故障失败，无法核验原文，因此暂不能给出带准确引用的确认答案。",
+  "citations": [],
+  "gaps": [
+    "读取工具持续报 TOOL_UNAVAILABLE，未能成功读取 D05-C01 原文",
+    "缺少可核验的原文引用，无法确认是否还有其他导出格式或冲突资料"
+  ],
+  "status": "incomplete",
+  "clarification_question": "",
+  "reason": "model_finished",
+  "metadata": {
+    "source_sha256": "1d3e43dd828fbc0b63c7c891058b4bedadcc9bf5a1b0c623dd8dcc5eacb5dbf0",
+    "run_id": "ea38816c-c09d-4d77-bad9-728a5660d9d1",
+    "started_at": "2026-10-30T07:09:25.726202+00:00",
+    "mode": "live",
+    "model": "deepseek-flash",
+    "corpus_sha256": "4b8955de837ee75f9836b777693b9c4226986fa36f59cb9deec08132c9520404",
+    "max_steps": 10,
+    "evidence_scope": "本轮已读取的资料，不保证知识库完整召回",
+    "mock_disclaimer": "",
+    "steps": 5,
+    "duration_ms": 7037.0
+  }
+}

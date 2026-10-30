@@ -1,0 +1,23 @@
+T01 PASS answered steps=3
+T02 PASS needs_clarification steps=6
+T03 PASS insufficient_evidence steps=4
+T04 PASS answered steps=4
+T05 PASS answered steps=3
+T06 PASS answered steps=4
+T07 PASS incomplete steps=4
+T08 PASS answered steps=4
+T09 PASS needs_clarification steps=6
+T10 FAIL incomplete steps=1
+{
+  "mode": "live",
+  "source_sha256": "9b91aba1f752d57d5a2c85735ef6e3fd445d2d82e3069bc868faa900bb21e1be",
+  "passed": 9,
+  "total": 10,
+  "paired_checks": {
+    "content_change_changes_answer": true,
+    "conflict_changes_status": true,
+    "conflict_changes_actions": true
+  },
+  "scope": "固定合成样本的工程与行为检查；非统计泛化评测，语义引用支持需人工复核",
+  "mock_disclaimer": ""
+}

@@ -1,0 +1,24 @@
+{
+  "answer": "未能完成检索：文档检索工具连续三次返回 TOOL_UNAVAILABLE（可重试故障），因此本轮无法取得任何制度原文，不能确认报销期限。请稍后重试。",
+  "citations": [],
+  "gaps": [
+    "检索工具故障，未能获得任何候选文档",
+    "报销期限相关制度原文未读取"
+  ],
+  "status": "incomplete",
+  "clarification_question": "",
+  "reason": "model_finished",
+  "metadata": {
+    "source_sha256": "a1d89f0df39a1468846d554468f2958f7ea2c82e568f454217d29c4e6a7e6369",
+    "run_id": "abc5ff47-a752-4387-926a-d4813aacdb7b",
+    "started_at": "2026-10-30T07:23:35.475216+00:00",
+    "mode": "live",
+    "model": "deepseek-flash",
+    "corpus_sha256": "4b8955de837ee75f9836b777693b9c4226986fa36f59cb9deec08132c9520404",
+    "max_steps": 10,
+    "evidence_scope": "本轮已读取的资料，不保证知识库完整召回",
+    "mock_disclaimer": "",
+    "steps": 4,
+    "duration_ms": 4837.58
+  }
+}

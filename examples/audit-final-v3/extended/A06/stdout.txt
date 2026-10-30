@@ -1,0 +1,24 @@
+{
+  "answer": "无法完成：读取工具连续三次返回可重试故障，未能成功读取候选片段原文，因此不能基于已读原文确认影云标准版支持导出的文件格式。",
+  "citations": [],
+  "gaps": [
+    "读取工具 TOOL_UNAVAILABLE 故障导致 D05-C01 原文未成功读取，无法核验并引用其内容",
+    "缺少可读取的原文来确认导出格式及其他可能格式"
+  ],
+  "status": "incomplete",
+  "clarification_question": "",
+  "reason": "model_finished",
+  "metadata": {
+    "source_sha256": "a1d89f0df39a1468846d554468f2958f7ea2c82e568f454217d29c4e6a7e6369",
+    "run_id": "7fb8597f-d7e2-4c5e-93d0-52bf045a5517",
+    "started_at": "2026-10-30T07:23:19.414892+00:00",
+    "mode": "live",
+    "model": "deepseek-flash",
+    "corpus_sha256": "4b8955de837ee75f9836b777693b9c4226986fa36f59cb9deec08132c9520404",
+    "max_steps": 10,
+    "evidence_scope": "本轮已读取的资料，不保证知识库完整召回",
+    "mock_disclaimer": "",
+    "steps": 5,
+    "duration_ms": 7822.63
+  }
+}

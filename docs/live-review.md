@@ -1,5 +1,7 @@
 # 真实模型运行的独立语义复核
 
+> 首次交付历史记录。第二次审查的逐项复核见 [audit/live-semantic-review.md](audit/live-semantic-review.md)，最终汇总见 [06-audit.md](06-audit.md)。
+
 复核日期：2026-10-30（Asia/Shanghai）。复核者：与实现分工的 AI 审阅代理；这是逐条人工式检查，不是额外的独立模型裁判或真人评审。
 
 ## 方法与边界

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_audit_core.py",
+    "-v"
+  ],
+  "cwd": "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent",
+  "env_overrides": {
+    "PYTHONPATH": "src"
+  },
+  "exit_code": 1
+}

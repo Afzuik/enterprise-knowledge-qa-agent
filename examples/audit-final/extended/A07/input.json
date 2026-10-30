@@ -1,0 +1,8 @@
+{
+  "question": "星舟团队版的一个项目里，最多能拉几位同事作为协作者？",
+  "history": [],
+  "corpus": "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/data/audit_corpus_conflict.json",
+  "fault": "none",
+  "mode": "live",
+  "max_steps": 10
+}

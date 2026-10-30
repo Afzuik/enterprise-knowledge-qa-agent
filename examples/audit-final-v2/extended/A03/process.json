@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/run.py",
+    "ask",
+    "--mode",
+    "live",
+    "--question",
+    "那它可以导出成什么格式？",
+    "--corpus",
+    "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/data/corpus_normal.json",
+    "--fault",
+    "none",
+    "--max-steps",
+    "10",
+    "--timeout",
+    "30",
+    "--output",
+    "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/examples/audit-final-v2/extended/A03",
+    "--history",
+    "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/examples/audit-final-v2/extended/A03-history.json"
+  ],
+  "cwd": "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent",
+  "exit_code": 0
+}

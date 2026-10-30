@@ -1,0 +1,120 @@
+test_answer_requires_citation (test_agent.AgentContractTests) ... ok
+test_answer_without_read_is_rejected (test_agent.AgentContractTests) ... ok
+test_blank_quote_is_not_evidence (test_agent.AgentContractTests) ... ok
+test_budget_exhaustion_is_explicit (test_agent.AgentContractTests) ... ok
+test_empty_question_rejected (test_agent.AgentContractTests) ... ok
+test_fabricated_quote_is_rejected (test_agent.AgentContractTests) ... ok
+test_failed_search_is_not_evidence_of_absence (test_agent.AgentContractTests) ... ok
+test_history_cannot_inject_privileged_roles (test_agent.AgentContractTests) ... ok
+test_insufficient_requires_successful_search (test_agent.AgentContractTests) ... ok
+test_invalid_action_shape_is_rejected (test_agent.AgentContractTests) ... ok
+test_invalid_budget_rejected (test_agent.AgentContractTests) ... ok
+test_invalid_search_arguments_are_rejected (test_agent.AgentContractTests) ... ok
+test_legal_read_then_finish (test_agent.AgentContractTests) ... ok
+test_model_exception_does_not_crash (test_agent.AgentContractTests) ... ok
+test_model_receives_actual_observations (test_agent.AgentContractTests) ... ok
+test_tool_exception_does_not_crash (test_agent.AgentContractTests) ... ok
+test_unknown_action_is_not_executed (test_agent.AgentContractTests) ... ok
+test_unread_document_citation_is_rejected (test_agent.AgentContractTests) ... ok
+test_unrelated_success_does_not_erase_read_failure (test_agent.AgentContractTests) ... ok
+test_wrong_version_is_rejected (test_agent.AgentContractTests) ... ok
+test_malformed_finish_fields_fail_closed_without_crash (test_audit_core.SecondPassCoreAuditTests) ... ok
+test_malformed_successful_search_is_not_evidence_of_absence (test_audit_core.SecondPassCoreAuditTests) ... ok
+test_read_response_identity_must_match_requested_fragment (test_audit_core.SecondPassCoreAuditTests) ... ok
+test_same_fragment_recovery_allows_answer_and_keeps_trace (test_audit_core.SecondPassCoreAuditTests) ... ok
+test_unhashable_model_error_attributes_are_sanitized (test_audit_core.SecondPassCoreAuditTests) ... ok
+test_unknown_id_failure_is_conservatively_retained (test_audit_core.SecondPassCoreAuditTests) ... ok
+test_unresolved_candidate_read_cannot_be_reported_answered (test_audit_core.SecondPassCoreAuditTests) ... ok
+test_whitespace_answer_is_not_completed_answer (test_audit_core.SecondPassCoreAuditTests) ... ok
+test_whitespace_decision_summary_rejected_before_tool (test_audit_core.SecondPassCoreAuditTests) ... ok
+test_conflict_reread_after_followup_search_is_valid (test_audit_evaluation.AuditEvaluationTests) ... ok
+test_declared_alternative_citation_sets (test_audit_evaluation.AuditEvaluationTests) ... ok
+test_declared_answer_excludes_and_quote_contains (test_audit_evaluation.AuditEvaluationTests) ... ok
+test_declared_conflict_checks_do_not_depend_on_case_id (test_audit_evaluation.AuditEvaluationTests) ... ok
+test_declared_reason_is_enforced (test_audit_evaluation.AuditEvaluationTests) ... ok
+test_declared_required_reads_are_enforced (test_audit_evaluation.AuditEvaluationTests) ... ok
+test_declared_tool_recovery_is_enforced (test_audit_evaluation.AuditEvaluationTests) ... ok
+test_unrelated_success_does_not_prove_failed_read_recovered (test_audit_evaluation.AuditEvaluationTests) ... ok
+test_budget_and_step_sequence_are_checked (test_audit_evaluation.PersistedEvidenceAuditTests) ... ok
+test_complete_run_matches_all_local_evidence (test_audit_evaluation.PersistedEvidenceAuditTests) ... ok
+test_final_output_matches_validated_finish (test_audit_evaluation.PersistedEvidenceAuditTests) ... ok
+test_modified_stdout_or_case_input_is_rejected (test_audit_evaluation.PersistedEvidenceAuditTests) ... ok
+test_next_action_chain_must_match_actual_next_event (test_audit_evaluation.PersistedEvidenceAuditTests) ... ok
+test_process_exit_code_must_match_final_state (test_audit_evaluation.PersistedEvidenceAuditTests) ... ok
+test_trace_read_must_match_disk_not_only_citation (test_audit_evaluation.PersistedEvidenceAuditTests) ... ok
+test_unknown_expected_key_is_rejected_before_execution (test_audit_evaluation.PersistedEvidenceAuditTests) ... ok
+test_wrong_mode_source_and_run_identity_are_rejected (test_audit_evaluation.PersistedEvidenceAuditTests) ... ok
+test_all_nine_cases_have_resolvable_corpus_and_expected_sources (test_audit_tools.AuditFixtureTests) ... FAIL
+test_both_non_reimbursement_conflicts_are_retrievable (test_audit_tools.AuditFixtureTests) ... ok
+test_change_modifies_original_fact_and_source_hash (test_audit_tools.AuditFixtureTests) ... ok
+test_explicit_priority_has_citable_source_not_only_date (test_audit_tools.AuditFixtureTests) ... ok
+test_new_paraphrase_retrieves_non_reimbursement_fact (test_audit_tools.AuditFixtureTests) ... ok
+test_outside_fact_has_real_noisy_candidate_but_no_support (test_audit_tools.AuditFixtureTests) ... ok
+test_product_question_retrieves_actual_product_source (test_audit_tools.AuditFixtureTests) ... ok
+test_read_failure_leaves_snippet_available_but_no_read_evidence (test_audit_tools.AuditFixtureTests) ... ok
+test_cli_reproducible_from_other_working_directory (test_cli.CLITests) ... ok
+test_existing_output_never_overwritten (test_cli.CLITests) ... ok
+test_invalid_history_logs_no_raw_content (test_cli.CLITests) ... ok
+test_limit_returns_two_and_saved_incomplete (test_cli.CLITests) ... ok
+test_live_configuration_failure_has_no_mock_fallback (test_cli.CLITests) ... ok
+test_mock_does_not_load_environment_or_construct_live_model (test_cli.CLITests) ... ok
+test_trace_writer_refuses_existing_directory (test_cli.CLITests) ... ok
+test_unknown_mode_rejected (test_cli.CLITests) ... ok
+test_bad_config_errors_do_not_contain_values (test_cli.ConfigTests) ... ok
+test_empty_config_and_missing_file (test_cli.ConfigTests) ... ok
+test_environment_precedence_quotes_and_bom (test_cli.ConfigTests) ... ok
+test_never_executes_shell_syntax (test_cli.ConfigTests) ... ok
+test_changed_document_rejects_stale_answer (test_evaluate.EvaluationChecksTests) ... ok
+test_conflict_requires_both_reads_then_followup (test_evaluate.EvaluationChecksTests) ... ok
+test_fabricated_quote_does_not_pass_correct_document_id (test_evaluate.EvaluationChecksTests) ... ok
+test_missing_trace_or_wrong_exit_fails (test_evaluate.EvaluationChecksTests) ... ok
+test_tool_recovery_requires_observed_failure_first (test_evaluate.EvaluationChecksTests) ... ok
+test_unread_citation_does_not_pass (test_evaluate.EvaluationChecksTests) ... ok
+test_valid_known_answer (test_evaluate.EvaluationChecksTests) ... ok
+test_wrong_numeric_value_does_not_pass_substring_match (test_evaluate.EvaluationChecksTests) ... ok
+test_full_offline_suite_is_reproducible_and_preserves_artifacts (test_evaluate.EvaluationRunnerTests) ... ok
+test_invalid_cases_are_rejected_before_creating_output (test_evaluate.EvaluationRunnerTests) ... ok
+test_allows_local_http (test_model.LiveModelTests) ... ok
+test_env_defaults_and_fallback (test_model.LiveModelTests) ... ok
+test_http_error_is_sanitized_and_not_retried (test_model.LiveModelTests) ... ok
+test_invalid_content_does_not_leak_raw_text (test_model.LiveModelTests) ... ok
+test_invalid_input_is_distinct (test_model.LiveModelTests) ... ok
+test_missing_configuration_does_not_fallback_to_mock (test_model.LiveModelTests) ... ok
+test_network_errors_are_sanitized (test_model.LiveModelTests) ... ok
+test_parse_hints_are_safe_and_specific (test_model.LiveModelTests) ... ok
+test_rejects_invalid_timeouts (test_model.LiveModelTests) ... ok
+test_rejects_redirects (test_model.LiveModelTests) ... ok
+test_rejects_unsafe_or_malformed_urls (test_model.LiveModelTests) ... ok
+test_request_and_response_contract (test_model.LiveModelTests) ... ok
+test_response_size_is_bounded (test_model.LiveModelTests) ... ok
+test_timeouts_are_distinct (test_model.LiveModelTests) ... ok
+test_http_roundtrip_and_redirect_block (test_model.LocalTransportTests) ... ok
+test_additional_paraphrases_without_sentence_mapping (test_tools.KnowledgeToolsTests) ... ok
+test_conflicting_documents_both_returned (test_tools.KnowledgeToolsTests) ... ok
+test_document_change (test_tools.KnowledgeToolsTests) ... ok
+test_duplicate_ids_rejected (test_tools.KnowledgeToolsTests) ... ok
+test_generic_action_word_does_not_remove_subject (test_tools.KnowledgeToolsTests) ... ok
+test_hash_matches_file (test_tools.KnowledgeToolsTests) ... ok
+test_input_validation (test_tools.KnowledgeToolsTests) ... ok
+test_invalid_fault_rejected (test_tools.KnowledgeToolsTests) ... ok
+test_nonexistent_and_mismatched_ids (test_tools.KnowledgeToolsTests) ... ok
+test_outside_corpus_and_empty_token_query (test_tools.KnowledgeToolsTests) ... ok
+test_persistent_search_failure (test_tools.KnowledgeToolsTests) ... ok
+test_read_faults (test_tools.KnowledgeToolsTests) ... ok
+test_search_and_read_normal (test_tools.KnowledgeToolsTests) ... ok
+test_search_once_failure_is_recoverable (test_tools.KnowledgeToolsTests) ... ok
+test_similar_question (test_tools.KnowledgeToolsTests) ... ok
+test_truncated_result_is_explicit (test_tools.KnowledgeToolsTests) ... ok
+
+======================================================================
+FAIL: test_all_nine_cases_have_resolvable_corpus_and_expected_sources (test_audit_tools.AuditFixtureTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_tools.py", line 15, in test_all_nine_cases_have_resolvable_corpus_and_expected_sources
+    self.assertEqual(len(cases), 9)
+AssertionError: 10 != 9
+
+----------------------------------------------------------------------
+Ran 107 tests in 1.473s
+
+FAILED (failures=1)

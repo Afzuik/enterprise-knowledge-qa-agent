@@ -1,0 +1,157 @@
+{
+  "mode": "live",
+  "passed": 7,
+  "total": 9,
+  "cases": [
+    {
+      "id": "A01",
+      "title": "产品FAQ明确答案",
+      "checks": {
+        "status": true,
+        "answer_contains": true,
+        "citation_ids": true,
+        "exit_code": true,
+        "trace_present": true,
+        "citations_grounded": true
+      },
+      "passed": true,
+      "status": "answered",
+      "steps": 3,
+      "artifacts": "A01/"
+    },
+    {
+      "id": "A02",
+      "title": "非报销新改写",
+      "checks": {
+        "status": true,
+        "answer_contains": true,
+        "citation_ids": true,
+        "exit_code": true,
+        "trace_present": true,
+        "citations_grounded": true
+      },
+      "passed": true,
+      "status": "answered",
+      "steps": 3,
+      "artifacts": "A02/"
+    },
+    {
+      "id": "A03",
+      "title": "产品历史指代追问",
+      "checks": {
+        "status": true,
+        "answer_contains": true,
+        "citation_ids": true,
+        "exit_code": true,
+        "trace_present": true,
+        "citations_grounded": true
+      },
+      "passed": true,
+      "status": "answered",
+      "steps": 3,
+      "artifacts": "A03/"
+    },
+    {
+      "id": "A04",
+      "title": "相关候选不支持所问事实",
+      "checks": {
+        "status": true,
+        "answer_contains": true,
+        "citation_ids": false,
+        "exit_code": true,
+        "trace_present": true,
+        "citations_grounded": true,
+        "gaps_present": true
+      },
+      "passed": false,
+      "status": "insufficient_evidence",
+      "steps": 5,
+      "artifacts": "A04/"
+    },
+    {
+      "id": "A05",
+      "title": "原文读取短暂失败后恢复",
+      "checks": {
+        "status": true,
+        "answer_contains": true,
+        "citation_ids": true,
+        "exit_code": true,
+        "trace_present": true,
+        "citations_grounded": true
+      },
+      "passed": true,
+      "status": "answered",
+      "steps": 4,
+      "artifacts": "A05/"
+    },
+    {
+      "id": "A06",
+      "title": "原文持续失败不得拿摘要作证",
+      "checks": {
+        "status": true,
+        "answer_contains": true,
+        "citation_ids": true,
+        "exit_code": true,
+        "trace_present": true,
+        "citations_grounded": true,
+        "gaps_present": true
+      },
+      "passed": true,
+      "status": "incomplete",
+      "steps": 5,
+      "artifacts": "A06/"
+    },
+    {
+      "id": "A07",
+      "title": "非D01D02产品事实冲突",
+      "checks": {
+        "status": true,
+        "answer_contains": true,
+        "citation_ids": true,
+        "exit_code": true,
+        "trace_present": true,
+        "citations_grounded": true,
+        "gaps_present": true
+      },
+      "passed": true,
+      "status": "needs_clarification",
+      "steps": 5,
+      "artifacts": "A07/"
+    },
+    {
+      "id": "A08",
+      "title": "非报销原文替换",
+      "checks": {
+        "status": true,
+        "answer_contains": true,
+        "citation_ids": true,
+        "exit_code": true,
+        "trace_present": true,
+        "citations_grounded": true
+      },
+      "passed": true,
+      "status": "answered",
+      "steps": 3,
+      "artifacts": "A08/"
+    },
+    {
+      "id": "A09",
+      "title": "明确替代关系可以消歧",
+      "checks": {
+        "status": true,
+        "answer_contains": true,
+        "citation_ids": false,
+        "exit_code": true,
+        "trace_present": true,
+        "citations_grounded": true
+      },
+      "passed": false,
+      "status": "answered",
+      "steps": 4,
+      "artifacts": "A09/"
+    }
+  ],
+  "paired_checks": {},
+  "scope": "固定合成样本的工程与行为检查；非统计泛化评测，语义引用支持需人工复核",
+  "mock_disclaimer": ""
+}

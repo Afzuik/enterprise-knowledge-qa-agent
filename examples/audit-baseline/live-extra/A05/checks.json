@@ -1,0 +1,16 @@
+{
+  "id": "A05",
+  "title": "原文读取短暂失败后恢复",
+  "checks": {
+    "status": true,
+    "answer_contains": true,
+    "citation_ids": true,
+    "exit_code": true,
+    "trace_present": true,
+    "citations_grounded": true
+  },
+  "passed": true,
+  "status": "answered",
+  "steps": 4,
+  "artifacts": "A05/"
+}

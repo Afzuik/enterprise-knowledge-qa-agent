@@ -1,0 +1,19 @@
+A01 PASS answered steps=3
+A02 PASS answered steps=3
+A03 PASS answered steps=3
+A04 PASS insufficient_evidence steps=5
+A05 PASS answered steps=4
+A06 PASS incomplete steps=5
+A07 PASS needs_clarification steps=5
+A08 PASS answered steps=3
+A09 PASS answered steps=3
+A10 PASS needs_clarification steps=6
+{
+  "mode": "live",
+  "source_sha256": "9b91aba1f752d57d5a2c85735ef6e3fd445d2d82e3069bc868faa900bb21e1be",
+  "passed": 10,
+  "total": 10,
+  "paired_checks": {},
+  "scope": "固定合成样本的工程与行为检查；非统计泛化评测，语义引用支持需人工复核",
+  "mock_disclaimer": ""
+}

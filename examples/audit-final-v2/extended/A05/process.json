@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/run.py",
+    "ask",
+    "--mode",
+    "live",
+    "--question",
+    "影云标准版明确支持导出哪种文件格式？",
+    "--corpus",
+    "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/data/corpus_normal.json",
+    "--fault",
+    "read_once",
+    "--max-steps",
+    "10",
+    "--timeout",
+    "30",
+    "--output",
+    "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/examples/audit-final-v2/extended/A05"
+  ],
+  "cwd": "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent",
+  "exit_code": 0
+}

@@ -1,0 +1,46 @@
+{
+  "synthetic": true,
+  "description": "审查新增合成样本；星舟为虚构产品，验证非报销事实与冲突，不对应真实产品。",
+  "documents": [
+    {
+      "doc_id": "P101",
+      "title": "星舟团队版协作者人数 FAQ",
+      "version_date": "2026-10-01",
+      "scope": "星舟团队版",
+      "priority": null,
+      "keywords": [
+        "星舟",
+        "团队版",
+        "协作者",
+        "邀请",
+        "人数",
+        "上限"
+      ],
+      "chunks": [
+        {
+          "chunk_id": "P101-C01",
+          "text": "星舟团队版每个项目最多可邀请 20 名协作者。"
+        }
+      ]
+    },
+    {
+      "doc_id": "P110",
+      "title": "星舟客户端登录 FAQ",
+      "version_date": "2026-08-01",
+      "scope": "星舟客户端",
+      "priority": null,
+      "keywords": [
+        "星舟",
+        "客户端",
+        "登录",
+        "邮箱"
+      ],
+      "chunks": [
+        {
+          "chunk_id": "P110-C01",
+          "text": "星舟客户端支持使用已注册邮箱登录；本资料未说明其他登录方式。"
+        }
+      ]
+    }
+  ]
+}

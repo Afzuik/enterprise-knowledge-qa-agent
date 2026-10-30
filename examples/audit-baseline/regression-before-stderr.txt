@@ -1,0 +1,144 @@
+test_malformed_finish_fields_fail_closed_without_crash (test_audit_core.SecondPassCoreAuditTests) ... ok
+test_malformed_successful_search_is_not_evidence_of_absence (test_audit_core.SecondPassCoreAuditTests) ... test_read_response_identity_must_match_requested_fragment (test_audit_core.SecondPassCoreAuditTests) ... FAIL
+test_unhashable_model_error_attributes_are_sanitized (test_audit_core.SecondPassCoreAuditTests) ... test_unresolved_candidate_read_cannot_be_reported_answered (test_audit_core.SecondPassCoreAuditTests) ... FAIL
+test_whitespace_answer_is_not_completed_answer (test_audit_core.SecondPassCoreAuditTests) ... FAIL
+test_whitespace_decision_summary_rejected_before_tool (test_audit_core.SecondPassCoreAuditTests) ... FAIL
+
+======================================================================
+ERROR: test_unhashable_model_error_attributes_are_sanitized (test_audit_core.SecondPassCoreAuditTests) (code=[], hint=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/src/knowledge_agent/agent.py", line 129, in run
+    action = self.model.decide(messages)
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_core.py", line 129, in decide
+    raise exc
+RuntimeError: sensitive-provider-details
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_core.py", line 131, in test_unhashable_model_error_attributes_are_sanitized
+    result = agent.run('报销期限多久？')
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/src/knowledge_agent/agent.py", line 133, in run
+    code = code if code in {'config_missing', 'invalid_model_output', 'invalid_request', 'network_error', 'http_error', 'response_too_large', 'config_invalid', 'model_timeout'} else 'model_error'
+TypeError: unhashable type: 'list'
+
+======================================================================
+ERROR: test_unhashable_model_error_attributes_are_sanitized (test_audit_core.SecondPassCoreAuditTests) (code='invalid_model_output', hint={})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/src/knowledge_agent/agent.py", line 129, in run
+    action = self.model.decide(messages)
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_core.py", line 129, in decide
+    raise exc
+RuntimeError: sensitive-provider-details
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_core.py", line 131, in test_unhashable_model_error_attributes_are_sanitized
+    result = agent.run('报销期限多久？')
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/src/knowledge_agent/agent.py", line 135, in run
+    hint = hint if hint in {'invalid_json', 'missing_action_fields', 'invalid_envelope', 'non_text_content', 'response_too_large'} else None
+TypeError: unhashable type: 'dict'
+
+======================================================================
+FAIL: test_malformed_successful_search_is_not_evidence_of_absence (test_audit_core.SecondPassCoreAuditTests) (response={'ok': True})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_core.py", line 103, in test_malformed_successful_search_is_not_evidence_of_absence
+    self.assertEqual(agent.run('停车位申请？')['status'], 'incomplete')
+AssertionError: 'insufficient_evidence' != 'incomplete'
+- insufficient_evidence
++ incomplete
+
+
+======================================================================
+FAIL: test_malformed_successful_search_is_not_evidence_of_absence (test_audit_core.SecondPassCoreAuditTests) (response={'ok': True, 'results': None, 'truncated': False})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_core.py", line 103, in test_malformed_successful_search_is_not_evidence_of_absence
+    self.assertEqual(agent.run('停车位申请？')['status'], 'incomplete')
+AssertionError: 'insufficient_evidence' != 'incomplete'
+- insufficient_evidence
++ incomplete
+
+
+======================================================================
+FAIL: test_malformed_successful_search_is_not_evidence_of_absence (test_audit_core.SecondPassCoreAuditTests) (response={'ok': True, 'results': 'not-an-array', 'truncated': False})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_core.py", line 103, in test_malformed_successful_search_is_not_evidence_of_absence
+    self.assertEqual(agent.run('停车位申请？')['status'], 'incomplete')
+AssertionError: 'insufficient_evidence' != 'incomplete'
+- insufficient_evidence
++ incomplete
+
+
+======================================================================
+FAIL: test_malformed_successful_search_is_not_evidence_of_absence (test_audit_core.SecondPassCoreAuditTests) (response={'ok': True, 'results': [None], 'truncated': False})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_core.py", line 103, in test_malformed_successful_search_is_not_evidence_of_absence
+    self.assertEqual(agent.run('停车位申请？')['status'], 'incomplete')
+AssertionError: 'insufficient_evidence' != 'incomplete'
+- insufficient_evidence
++ incomplete
+
+
+======================================================================
+FAIL: test_malformed_successful_search_is_not_evidence_of_absence (test_audit_core.SecondPassCoreAuditTests) (response={'ok': True, 'results': [{'doc_id': []}], 'truncated': False})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_core.py", line 103, in test_malformed_successful_search_is_not_evidence_of_absence
+    self.assertEqual(agent.run('停车位申请？')['status'], 'incomplete')
+AssertionError: 'insufficient_evidence' != 'incomplete'
+- insufficient_evidence
++ incomplete
+
+
+======================================================================
+FAIL: test_read_response_identity_must_match_requested_fragment (test_audit_core.SecondPassCoreAuditTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_core.py", line 83, in test_read_response_identity_must_match_requested_fragment
+    self.assertEqual(agent.run('报销期限多久？')['status'], 'incomplete')
+AssertionError: 'answered' != 'incomplete'
+- answered
++ incomplete
+
+
+======================================================================
+FAIL: test_unresolved_candidate_read_cannot_be_reported_answered (test_audit_core.SecondPassCoreAuditTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_core.py", line 60, in test_unresolved_candidate_read_cannot_be_reported_answered
+    self.assertEqual(result['status'], 'incomplete')
+AssertionError: 'answered' != 'incomplete'
+- answered
++ incomplete
+
+
+======================================================================
+FAIL: test_whitespace_answer_is_not_completed_answer (test_audit_core.SecondPassCoreAuditTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_core.py", line 70, in test_whitespace_answer_is_not_completed_answer
+    self.assertEqual(agent.run('报销期限多久？')['status'], 'incomplete')
+AssertionError: 'answered' != 'incomplete'
+- answered
++ incomplete
+
+
+======================================================================
+FAIL: test_whitespace_decision_summary_rejected_before_tool (test_audit_core.SecondPassCoreAuditTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/debin.mi/Documents/Vscodeproject/小影科技校招-企业知识问答 Agent/tests/test_audit_core.py", line 117, in test_whitespace_decision_summary_rejected_before_tool
+    self.assertEqual(tools.calls, 0)
+AssertionError: 1 != 0
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.011s
+
+FAILED (failures=9, errors=2)

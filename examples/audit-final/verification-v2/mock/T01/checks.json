@@ -1,0 +1,32 @@
+{
+  "id": "T01",
+  "title": "明确答案",
+  "checks": {
+    "status": true,
+    "answer_contains": true,
+    "citation_ids": true,
+    "exit_code": true,
+    "trace_present": true,
+    "citations_grounded": true
+  },
+  "evidence_checks": {
+    "mode_matches": true,
+    "source_matches": true,
+    "step_count_matches": true,
+    "step_sequence_valid": true,
+    "budget_respected": true,
+    "trace_identity_matches": true,
+    "next_action_chain_valid": true,
+    "process_exit_matches_state": true,
+    "stdout_matches_output": true,
+    "input_matches_case": true,
+    "input_corpus_matches": true,
+    "corpus_matches": true,
+    "read_observations_match_corpus": true,
+    "finish_matches_output": true
+  },
+  "passed": true,
+  "status": "answered",
+  "steps": 3,
+  "artifacts": "T01/"
+}

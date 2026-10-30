@@ -1,0 +1,37 @@
+{
+  "answer": "本轮读取的两份资料对报销期限的规定不一致：一份为30天，另一份为15天，且两份原文均未载明适用范围或优先/替代关系，因此无法确定应适用哪个期限。请确认应依据哪份制度，或补充说明适用的人员/费用范围。",
+  "citations": [
+    {
+      "doc_id": "D01",
+      "chunk_id": "D01-C01",
+      "version_date": "2026-01-01",
+      "quote": "报销期限为 30 天。"
+    },
+    {
+      "doc_id": "D02",
+      "chunk_id": "D02-C01",
+      "version_date": "2026-02-01",
+      "quote": "报销期限为 15 天。"
+    }
+  ],
+  "gaps": [
+    "两份资料对报销期限的规定冲突（30天 vs 15天）",
+    "缺少适用范围、优先级或替代关系的说明"
+  ],
+  "status": "needs_clarification",
+  "clarification_question": "请确认报销期限应适用哪份制度（30天还是15天），以及该期限对应的适用人员或费用范围。",
+  "reason": "model_finished",
+  "metadata": {
+    "source_sha256": "9b91aba1f752d57d5a2c85735ef6e3fd445d2d82e3069bc868faa900bb21e1be",
+    "run_id": "ea5c403f-c09b-4903-9fe4-0bfec3297db2",
+    "started_at": "2026-10-30T07:19:37.236541+00:00",
+    "mode": "live",
+    "model": "deepseek-flash",
+    "corpus_sha256": "31fed8f2d10eedbc2c6bddf3eb098327df0c005c69d317c4b74678739dc2b9bd",
+    "max_steps": 10,
+    "evidence_scope": "本轮已读取的资料，不保证知识库完整召回",
+    "mock_disclaimer": "",
+    "steps": 6,
+    "duration_ms": 8168.98
+  }
+}

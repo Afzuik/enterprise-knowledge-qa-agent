@@ -1,0 +1,225 @@
+[
+  {
+    "id": "A01",
+    "title": "产品FAQ明确答案",
+    "question": "影云标准版明确支持导出哪种文件格式？",
+    "corpus": "data/corpus_normal.json",
+    "fault": "none",
+    "max_steps": 10,
+    "expected": {
+      "status": "answered",
+      "answer_contains": [
+        "MP4"
+      ],
+      "citation_ids": [
+        "D05"
+      ],
+      "required_read_ids": [
+        "D05"
+      ],
+      "quote_contains": [
+        "MP4"
+      ]
+    }
+  },
+  {
+    "id": "A02",
+    "title": "非报销新改写",
+    "question": "星舟团队版的一个项目里，最多能拉几位同事作为协作者？",
+    "corpus": "data/audit_corpus_product.json",
+    "fault": "none",
+    "max_steps": 10,
+    "expected": {
+      "status": "answered",
+      "answer_contains": [
+        "8"
+      ],
+      "citation_ids": [
+        "P101"
+      ],
+      "required_read_ids": [
+        "P101"
+      ],
+      "quote_contains": [
+        "8"
+      ]
+    }
+  },
+  {
+    "id": "A03",
+    "title": "产品历史指代追问",
+    "question": "那它可以导出成什么格式？",
+    "corpus": "data/corpus_normal.json",
+    "fault": "none",
+    "max_steps": 10,
+    "expected": {
+      "status": "answered",
+      "answer_contains": [
+        "MP4"
+      ],
+      "citation_ids": [
+        "D05"
+      ],
+      "required_read_ids": [
+        "D05"
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "content": "我们只讨论影云标准版。"
+      },
+      {
+        "role": "assistant",
+        "content": "好的，请问你想了解影云标准版的哪项功能？"
+      }
+    ]
+  },
+  {
+    "id": "A04",
+    "title": "相关候选不支持所问事实",
+    "question": "影云标准版能否导出 8K 分辨率视频？现有资料是否足以确认？",
+    "corpus": "data/corpus_normal.json",
+    "fault": "none",
+    "max_steps": 10,
+    "expected": {
+      "status": "insufficient_evidence",
+      "answer_contains": [],
+      "citation_ids": [],
+      "citation_sets": [
+        [],
+        [
+          "D05"
+        ]
+      ],
+      "required_read_ids": [
+        "D05"
+      ]
+    }
+  },
+  {
+    "id": "A05",
+    "title": "原文读取短暂失败后恢复",
+    "question": "影云标准版明确支持导出哪种文件格式？",
+    "corpus": "data/corpus_normal.json",
+    "fault": "read_once",
+    "max_steps": 10,
+    "expected": {
+      "status": "answered",
+      "answer_contains": [
+        "MP4"
+      ],
+      "citation_ids": [
+        "D05"
+      ],
+      "required_read_ids": [
+        "D05"
+      ],
+      "failure_then_recovery": true
+    }
+  },
+  {
+    "id": "A06",
+    "title": "原文持续失败不得拿摘要作证",
+    "question": "影云标准版明确支持导出哪种文件格式？",
+    "corpus": "data/corpus_normal.json",
+    "fault": "read_always",
+    "max_steps": 10,
+    "expected": {
+      "status": "incomplete",
+      "answer_contains": [],
+      "citation_ids": []
+    }
+  },
+  {
+    "id": "A07",
+    "title": "非D01D02产品事实冲突",
+    "question": "星舟团队版的一个项目里，最多能拉几位同事作为协作者？",
+    "corpus": "data/audit_corpus_conflict.json",
+    "fault": "none",
+    "max_steps": 10,
+    "expected": {
+      "status": "needs_clarification",
+      "answer_contains": [
+        "8",
+        "12"
+      ],
+      "citation_ids": [
+        "P101",
+        "P102"
+      ],
+      "required_read_ids": [
+        "P101",
+        "P102"
+      ],
+      "search_after_reads": true
+    }
+  },
+  {
+    "id": "A08",
+    "title": "非报销原文替换",
+    "question": "星舟团队版的一个项目里，最多能拉几位同事作为协作者？",
+    "corpus": "data/audit_corpus_changed.json",
+    "fault": "none",
+    "max_steps": 10,
+    "expected": {
+      "status": "answered",
+      "answer_contains": [
+        "20"
+      ],
+      "citation_ids": [
+        "P101"
+      ],
+      "required_read_ids": [
+        "P101"
+      ],
+      "quote_contains": [
+        "20"
+      ],
+      "answer_excludes": [
+        "8"
+      ]
+    }
+  },
+  {
+    "id": "A09",
+    "title": "明确替代关系可以消歧",
+    "question": "星舟团队版的一个项目里，最多能拉几位同事作为协作者？",
+    "corpus": "data/audit_corpus_resolved.json",
+    "fault": "none",
+    "max_steps": 10,
+    "expected": {
+      "status": "answered",
+      "answer_contains": [
+        "12"
+      ],
+      "citation_ids": [
+        "P103"
+      ],
+      "citation_sets": [
+        [
+          "P103"
+        ],
+        [
+          "P101",
+          "P103"
+        ],
+        [
+          "P102",
+          "P103"
+        ],
+        [
+          "P101",
+          "P102",
+          "P103"
+        ]
+      ],
+      "required_read_ids": [
+        "P103"
+      ],
+      "quote_contains": [
+        "12"
+      ]
+    }
+  }
+]
