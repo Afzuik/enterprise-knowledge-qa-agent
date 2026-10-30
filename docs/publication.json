@@ -1,0 +1,15 @@
+{
+  "verified_at": "2026-10-30T08:01:50.635392+00:00",
+  "repository_url": "https://github.com/Afzuik/enterprise-knowledge-qa-agent",
+  "visibility": "private",
+  "default_branch": "main",
+  "first_verified_pushed_commit": "51874e87d5c7ba179d070bd2957c28557620390b",
+  "remote_matches_local_at_verification": true,
+  "historical_secret_blob_scan": {
+    "blobs_checked": 822,
+    "potential_hits": 0
+  },
+  "reviewer_access": "not configured; reviewer account not provided",
+  "assessment_number": "not provided",
+  "network_note": "API verified directly; git push used reachable local proxy 127.0.0.1:7890 via per-command override only. No global proxy changes."
+}
